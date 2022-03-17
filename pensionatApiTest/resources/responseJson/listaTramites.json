@@ -1,0 +1,1495 @@
+{
+    "tramites": [
+        {
+            "peticion": [
+                {
+                    "id_peticion": 1,
+                    "tipo_peticion_descripcion": "TRAMITE",
+                    "nodos": [
+                        {
+                            "id_tipo_tramite": 80,
+                            "nombre_tramite": "B ENDOSOS IMSS",
+                            "id_tipo_peticion": 7500,
+                            "subtramites": [
+                                {
+                                    "id_tramite_sucursal": 359,
+                                    "nombre_tramite_sucursal": "BS01 SEGUNDAS NUPCIAS",
+                                    "id_param_envio": 90896,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155593,
+                                            "id_relacion": 209,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE Y FECHA    ",
+                                            "id_tipo_doc": 29,
+                                            "descripcion": "03 COPIA DE ACTA DE MATRIMONIO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 2
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155594,
+                                            "id_relacion": 213,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE Y FIRMA",
+                                            "id_tipo_doc": 33,
+                                            "descripcion": "10 IDENTIFICACION OFICIAL ANVERSO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155595,
+                                            "id_relacion": 264,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE  FIRMA Y FECHA  ",
+                                            "id_tipo_doc": 84,
+                                            "descripcion": "58 COPIA DE RESOLUCION DE PENSION RENTA VITALICIA",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 2
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155966,
+                                            "id_relacion": 471,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE, DATOS GENERALES Y VIGENCIA",
+                                            "id_tipo_doc": 259,
+                                            "descripcion": "IDENTIFICACION OFICIAL REVERSO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155928,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id_tramite_sucursal": 395,
+                                    "nombre_tramite_sucursal": "BS02 CORRECCION DE DATOS BASICOS",
+                                    "id_param_envio": 90908,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155639,
+                                            "id_relacion": 233,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE FIRMA FECHA Y SELLO DEL IMSS  ",
+                                            "id_tipo_doc": 53,
+                                            "descripcion": "36 ORIGINAL O COPIA DE RESOLUCION CON LEYENDA",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 2
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155978,
+                                            "id_relacion": 471,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE, DATOS GENERALES Y VIGENCIA",
+                                            "id_tipo_doc": 259,
+                                            "descripcion": "IDENTIFICACION OFICIAL REVERSO",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155979,
+                                            "id_relacion": 213,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE, DATOS GENERALES Y VIGENCIA",
+                                            "id_tipo_doc": 33,
+                                            "descripcion": "10 IDENTIFICACION OFICIAL ANVERSO",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155638,
+                                            "id_relacion": 244,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "SE VALIDA NOMBRE Y FECHA",
+                                            "id_tipo_doc": 64,
+                                            "descripcion": "18 ORGINAL O COPIA DE FORMATO DE CORRECCION DE DATOS IMSS",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155929,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id_tramite_sucursal": 396,
+                                    "nombre_tramite_sucursal": "BS03 CAMBIO DE TITULAR POR FALLECIMIENTO",
+                                    "id_param_envio": 90916,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155613,
+                                            "id_relacion": 236,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA QUE TENGA CUENTA CLABE Y NOMBRE",
+                                            "id_tipo_doc": 56,
+                                            "descripcion": "08 COPIA DE ESTADO DE CUENTA BANCARIO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155614,
+                                            "id_relacion": 213,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE Y FIRMA",
+                                            "id_tipo_doc": 33,
+                                            "descripcion": "10 IDENTIFICACION OFICIAL ANVERSO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155615,
+                                            "id_relacion": 219,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDAN NOMBRES Y FECHAS",
+                                            "id_tipo_doc": 39,
+                                            "descripcion": "19 ORIGINAL DE ACTA DE DEFUNCION",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155616,
+                                            "id_relacion": 230,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE FECHA LEYENDA DE CONFORMIDAD DE COBRO DE COMISION FIRMA  ",
+                                            "id_tipo_doc": 50,
+                                            "descripcion": "33 ORIGINAL O COPIA CARTA ACEPTACION COBRO COMISIONES",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155617,
+                                            "id_relacion": 234,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE FECHA FIRMAS Y SELLO DEL IMSS LEYENDA DE CAMBIO DE TITULAR  ",
+                                            "id_tipo_doc": 54,
+                                            "descripcion": "37 ORIGINAL O COPIA DE RESOLUCION DE SOBREVIVENCIA",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 2
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155618,
+                                            "id_relacion": 238,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA REQUISITADO COMPLETO  FECHAS Y FIRMAS    EL FORMATO SE ENCUENTRA EN INTRANET EN LA RUTA FORMATOS Y CIRCULARES SISTEMAS DE FORMAS FORMATOS DIVERSOS SELECCIÓN DE FORMA DE PAGO Y CAMBIO DE DOMICILIO  ",
+                                            "id_tipo_doc": 58,
+                                            "descripcion": "38 ORIGINAL O COPIA FORMATO FORMA PAGO Y ANEXOS BCO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155967,
+                                            "id_relacion": 471,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE, DATOS GENERALES Y VIGENCIA",
+                                            "id_tipo_doc": 259,
+                                            "descripcion": "IDENTIFICACION OFICIAL REVERSO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155930,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id_tramite_sucursal": 379,
+                                    "nombre_tramite_sucursal": "BS04 ALTA DE COMPONENTES",
+                                    "id_param_envio": 90897,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155596,
+                                            "id_relacion": 236,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA QUE TENGA CUENTA CLABE Y NOMBRE",
+                                            "id_tipo_doc": 56,
+                                            "descripcion": "08 COPIA DE ESTADO DE CUENTA BANCARIO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155597,
+                                            "id_relacion": 213,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE Y FIRMA",
+                                            "id_tipo_doc": 33,
+                                            "descripcion": "10 IDENTIFICACION OFICIAL ANVERSO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155598,
+                                            "id_relacion": 216,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA  NSS NOMBRE FIRMAS Y FECHAS  ",
+                                            "id_tipo_doc": 36,
+                                            "descripcion": "14 COPIA DE SOLICITUD DE PENSION",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 2
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155599,
+                                            "id_relacion": 234,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE FECHA FIRMAS Y SELLO DEL IMSS LEYENDA DE CAMBIO DE TITULAR  ",
+                                            "id_tipo_doc": 54,
+                                            "descripcion": "37 ORIGINAL O COPIA DE RESOLUCION DE SOBREVIVENCIA",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 2
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155968,
+                                            "id_relacion": 471,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE, DATOS GENERALES Y VIGENCIA",
+                                            "id_tipo_doc": 259,
+                                            "descripcion": "IDENTIFICACION OFICIAL REVERSO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155600,
+                                            "id_relacion": 238,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "SE VALIDA REQUISITADO COMPLETO  FECHAS Y FIRMAS    ",
+                                            "id_tipo_doc": 58,
+                                            "descripcion": "38 ORIGINAL O COPIA FORMATO FORMA PAGO Y ANEXOS BCO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155931,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id_tramite_sucursal": 382,
+                                    "nombre_tramite_sucursal": "BS07 REACTIVACION POR PRORROGA DE ESTUDIOS",
+                                    "id_param_envio": 90899,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155602,
+                                            "id_relacion": 232,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE DEL ASEGURADO NSS NOMBRE BENEFICIARIO CICLO ESCOLAR  ",
+                                            "id_tipo_doc": 52,
+                                            "descripcion": "35 ORIGINAL O COPIA DE PRORROGA DE ESTUDIOS",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155933,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id_tramite_sucursal": 383,
+                                    "nombre_tramite_sucursal": "BS08 SOBREVIVENCIA",
+                                    "id_param_envio": 90900,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155603,
+                                            "id_relacion": 236,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA QUE TENGA CUENTA CLABE Y NOMBRE",
+                                            "id_tipo_doc": 56,
+                                            "descripcion": "08 COPIA DE ESTADO DE CUENTA BANCARIO",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 5
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155605,
+                                            "id_relacion": 224,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE NÚMERO DE POLIZA NSS Y FIRMA    ",
+                                            "id_tipo_doc": 44,
+                                            "descripcion": "25 ORIGINAL DE FORMATO SOLICITUD DE CREDENCIAL Y FOTO",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155607,
+                                            "id_relacion": 239,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE NSS SELLO Y LEYENDA DE SOBREVIVENCIA  ",
+                                            "id_tipo_doc": 59,
+                                            "descripcion": "29 ORIGINAL DE RESOLUCION DE SOBREVIVENCIA",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 2
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155608,
+                                            "id_relacion": 219,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDAN NOMBRES Y FECHAS",
+                                            "id_tipo_doc": 39,
+                                            "descripcion": "19 ORIGINAL DE ACTA DE DEFUNCION",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155609,
+                                            "id_relacion": 230,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE FECHA LEYENDA DE CONFORMIDAD DE COBRO DE COMISIÓN FIRMA  ",
+                                            "id_tipo_doc": 50,
+                                            "descripcion": "33 ORIGINAL O COPIA CARTA ACEPTACION COBRO COMISIONES",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155610,
+                                            "id_relacion": 238,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA REQUISITADO COMPLETO  FECHAS Y FIRMAS    ",
+                                            "id_tipo_doc": 58,
+                                            "descripcion": "38 ORIGINAL O COPIA FORMATO FORMA PAGO Y ANEXOS BCO",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155986,
+                                            "id_relacion": 472,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE, DATOS GENERALES Y VIGENCIA",
+                                            "id_tipo_doc": 260,
+                                            "descripcion": "IDENTIFICACION OFICIAL DE BENEFICIARIOS REVERSO",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155604,
+                                            "id_relacion": 214,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "SE VALIDA NOMBRE Y FIRMA",
+                                            "id_tipo_doc": 34,
+                                            "descripcion": "11 IDENTIFICACION OFICIAL DE BENEFICIARIOS ANVERSO",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155606,
+                                            "id_relacion": 226,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "SE VALIDA NOMBRE NSS SELLO Y DATOS BÁSICOS DE LA PENSIÓN  ",
+                                            "id_tipo_doc": 46,
+                                            "descripcion": "28 ORIGINAL DE RESOLUCION DE PENSION RENTA VITALICIA",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 2
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155934,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id_tramite_sucursal": 388,
+                                    "nombre_tramite_sucursal": "BS13 OPERACIONES SOBREVIVENCIA CS 22 12",
+                                    "id_param_envio": 90905,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155635,
+                                            "id_relacion": 219,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDAN NOMBRES Y FECHAS",
+                                            "id_tipo_doc": 39,
+                                            "descripcion": "19 ORIGINAL DE ACTA DE DEFUNCION",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155952,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id_tramite_sucursal": 394,
+                                    "nombre_tramite_sucursal": "BS20 VERIFICACIÓN DE VIVENCIA EN SUCURSAL",
+                                    "id_param_envio": 90919,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155621,
+                                            "id_relacion": 211,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA VIGENCIA DEL DOCUMENTO QUE DEBE SER DE DOS MESES",
+                                            "id_tipo_doc": 31,
+                                            "descripcion": "05 COPIA DE COMPROBANTE DE DOMICILIO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 2
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155622,
+                                            "id_relacion": 213,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE Y FIRMA",
+                                            "id_tipo_doc": 33,
+                                            "descripcion": "10 IDENTIFICACION OFICIAL ANVERSO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155969,
+                                            "id_relacion": 471,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE, DATOS GENERALES Y VIGENCIA",
+                                            "id_tipo_doc": 259,
+                                            "descripcion": "IDENTIFICACION OFICIAL REVERSO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155953,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id_tramite_sucursal": 461,
+                                    "nombre_tramite_sucursal": "BS21 VERIFICACIÓN DE VIVENCIA POR VIVENCIA EN EXTRANJERO",
+                                    "id_param_envio": 91105,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155900,
+                                            "id_relacion": 30,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "EXPEDIDO POR EL CONSULADO DE MEXICO EN EL PAIS DONDE SE ENCUENTRA DE FECHA RECIENTE",
+                                            "id_tipo_doc": 254,
+                                            "descripcion": "FE DE VIDA",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 3
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155980,
+                                            "id_relacion": 471,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE, DATOS GENERALES Y VIGENCIA",
+                                            "id_tipo_doc": 259,
+                                            "descripcion": "IDENTIFICACION OFICIAL REVERSO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155981,
+                                            "id_relacion": 213,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE, DATOS GENERALES Y VIGENCIA",
+                                            "id_tipo_doc": 33,
+                                            "descripcion": "10 IDENTIFICACION OFICIAL ANVERSO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155954,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id_tramite_sucursal": 459,
+                                    "nombre_tramite_sucursal": "BS22 VERIFICACIÓN DE VIVENCIA POR IMPOSIBILIDAD DE PENSIONADO",
+                                    "id_param_envio": 91104,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155899,
+                                            "id_relacion": 31,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "EXPEDIDA POR LOS INSTITUTOS DE SEGURIDAD SOCIAL CON FECHA DE EMISION ACTUAL",
+                                            "id_tipo_doc": 255,
+                                            "descripcion": "NOTA MEDICA EXPEDIDA POR MEDICO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 2
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155982,
+                                            "id_relacion": 471,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE, DATOS GENERALES Y VIGENCIA",
+                                            "id_tipo_doc": 259,
+                                            "descripcion": "IDENTIFICACION OFICIAL REVERSO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155983,
+                                            "id_relacion": 213,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE, DATOS GENERALES Y VIGENCIA",
+                                            "id_tipo_doc": 33,
+                                            "descripcion": "10 IDENTIFICACION OFICIAL ANVERSO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155955,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id_tipo_tramite": 79,
+                            "nombre_tramite": "C SEGUROS",
+                            "id_tipo_peticion": 7500,
+                            "subtramites": [
+                                {
+                                    "id_tramite_sucursal": 462,
+                                    "nombre_tramite_sucursal": "CS08 COMISION POR DETECCION DE DEFUNCION",
+                                    "id_param_envio": 91107,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155915,
+                                            "id_relacion": 254,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "ORIGINAL DE FORMATO",
+                                            "id_tipo_doc": 74,
+                                            "descripcion": "48 FORMATO DE DETECCION DE FALLECIMIENTO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155916,
+                                            "id_relacion": 446,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "ORIGINAL",
+                                            "id_tipo_doc": 243,
+                                            "descripcion": "ACTA DE DEFUNCION",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155939,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id_tipo_tramite": 67,
+                            "nombre_tramite": "D PAGO A PENSIONADOS",
+                            "id_tipo_peticion": 7500,
+                            "subtramites": [
+                                {
+                                    "id_tramite_sucursal": 418,
+                                    "nombre_tramite_sucursal": "DS04 PAGO DE PENSION ALIMENTICIA",
+                                    "id_param_envio": 90999,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155757,
+                                            "id_relacion": 245,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE",
+                                            "id_tipo_doc": 65,
+                                            "descripcion": "13 COPIA DE RESOLUCION JUDICIAL DE PENSION ALIMENTICIA",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155758,
+                                            "id_relacion": 217,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDAN DATOS DEL PENSIONADO ",
+                                            "id_tipo_doc": 37,
+                                            "descripcion": "15 COPIA OFICIO IMSS INFORMANDO PENSION ALIMENTICIA",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155759,
+                                            "id_relacion": 238,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "DATOS NOMBRE Y FIRMA",
+                                            "id_tipo_doc": 58,
+                                            "descripcion": "38 ORIGINAL O COPIA FORMATO FORMA PAGO Y ANEXOS BCO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155984,
+                                            "id_relacion": 471,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE, DATOS GENERALES Y VIGENCIA",
+                                            "id_tipo_doc": 259,
+                                            "descripcion": "IDENTIFICACION OFICIAL REVERSO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155985,
+                                            "id_relacion": 213,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE, DATOS GENERALES Y VIGENCIA",
+                                            "id_tipo_doc": 33,
+                                            "descripcion": "10 IDENTIFICACION OFICIAL ANVERSO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155756,
+                                            "id_relacion": 236,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "SE VALIDA CUENTA  NOMBRE Y FIRMA",
+                                            "id_tipo_doc": 56,
+                                            "descripcion": "08 COPIA DE ESTADO DE CUENTA BANCARIO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155944,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id_tipo_tramite": 68,
+                            "nombre_tramite": "E SERVICIO A PENSIONADOS",
+                            "id_tipo_peticion": 7500,
+                            "subtramites": [
+                                {
+                                    "id_tramite_sucursal": 425,
+                                    "nombre_tramite_sucursal": "ES01 REIMPRESION DE POLIZA DE PENSIONADO",
+                                    "id_param_envio": 91006,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155769,
+                                            "id_relacion": 242,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "AGREGAR EN NOTAS DEL TRÁMITE EL MOTIVO DE LA PETICIÓN",
+                                            "id_tipo_doc": 62,
+                                            "descripcion": "16 NOTA DEL MOTIVO DE LA PETICION",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155947,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id_tramite_sucursal": 427,
+                                    "nombre_tramite_sucursal": "ES03 ACTUALIZACION DE DOMICILIO",
+                                    "id_param_envio": 91008,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155771,
+                                            "id_relacion": 242,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "AGREGAR EN NOTAS EL MOTIVO DE LA PETICIÓN",
+                                            "id_tipo_doc": 62,
+                                            "descripcion": "16 NOTA DEL MOTIVO DE LA PETICION",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155948,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id_tramite_sucursal": 446,
+                                    "nombre_tramite_sucursal": "ES05 ALTA Y O CAMBIO FORMA DE PAGO",
+                                    "id_param_envio": 91042,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155829,
+                                            "id_relacion": 236,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE Y DATOS BANCARIOS",
+                                            "id_tipo_doc": 56,
+                                            "descripcion": "08 COPIA DE ESTADO DE CUENTA BANCARIO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155989,
+                                            "id_relacion": 213,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE, DATOS GENERALES Y VIGENCIA",
+                                            "id_tipo_doc": 33,
+                                            "descripcion": "10 IDENTIFICACION OFICIAL ANVERSO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155990,
+                                            "id_relacion": 471,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE, DATOS GENERALES Y VIGENCIA",
+                                            "id_tipo_doc": 259,
+                                            "descripcion": "IDENTIFICACION OFICIAL REVERSO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155991,
+                                            "id_relacion": 211,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA VIGENCIA DEL DOCUMENTO QUE DEBE SER DE DOS MESES",
+                                            "id_tipo_doc": 31,
+                                            "descripcion": "05 COPIA DE COMPROBANTE DE DOMICILIO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 2
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155949,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id_tramite_sucursal": 473,
+                                    "nombre_tramite_sucursal": "ES16 ALTA Y O CAMBIO DE FORMA DE PAGO CON SUSPENSIÓN",
+                                    "id_param_envio": 91111,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155919,
+                                            "id_relacion": 236,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "CUENTA Y CUENTA CLABE",
+                                            "id_tipo_doc": 56,
+                                            "descripcion": "08 COPIA DE ESTADO DE CUENTA BANCARIO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155920,
+                                            "id_relacion": 230,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SOLO EN CASO DE QUE NO SEA CUENTA CONVENIO",
+                                            "id_tipo_doc": 50,
+                                            "descripcion": "33 ORIGINAL O COPIA CARTA ACEPTACION COBRO COMISIONES",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155921,
+                                            "id_relacion": 256,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "CARTA PETICIÓN DE CAMBIO DE CUENTA",
+                                            "id_tipo_doc": 76,
+                                            "descripcion": "50 ORIGINAL DE CARTA PETICION ESPECIFICANDO CORRECCION",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 2
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155956,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id_tramite_sucursal": 476,
+                                    "nombre_tramite_sucursal": "ES17 CAMBIO DE TELEFONO PORTAL",
+                                    "id_param_envio": 91113,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155923,
+                                            "id_relacion": 242,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "DATOS DE CAMBIO VALIDOS",
+                                            "id_tipo_doc": 62,
+                                            "descripcion": "16 NOTA DEL MOTIVO DE LA PETICION",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155957,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id_tramite_sucursal": 477,
+                                    "nombre_tramite_sucursal": "ES18 ACTUALIZACION DE DOMICILIO PORTAL",
+                                    "id_param_envio": 91114,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155924,
+                                            "id_relacion": 24,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "DOMICILIO ",
+                                            "id_tipo_doc": 6,
+                                            "descripcion": "COMPROBANTE DE DOMICILIO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 2
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155958,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id_tramite_sucursal": 478,
+                                    "nombre_tramite_sucursal": "ES19 ALTA Y O CAMBIO DE FORMA DE PAGO PORTAL",
+                                    "id_param_envio": 91115,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155925,
+                                            "id_relacion": 387,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "CUENTA Y CUENTA CLABE",
+                                            "id_tipo_doc": 219,
+                                            "descripcion": "ESTADO DE CUENTA BANCARIO",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 5
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155959,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id_tipo_tramite": 85,
+                            "nombre_tramite": "G QUEJAS URGENTES",
+                            "id_tipo_peticion": 7500,
+                            "subtramites": [
+                                {
+                                    "id_tramite_sucursal": 457,
+                                    "nombre_tramite_sucursal": "GS01 ATENCION DE QUEJAS URGENTES",
+                                    "id_param_envio": 91103,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155898,
+                                            "id_relacion": 242,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "SIN VALIDACION",
+                                            "id_tipo_doc": 62,
+                                            "descripcion": "16 NOTA DEL MOTIVO DE LA PETICION",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155961,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id_tipo_tramite": 71,
+                            "nombre_tramite": "I DOCUMENTOS PARA EXPEDIENTE",
+                            "id_tipo_peticion": 7500,
+                            "subtramites": [
+                                {
+                                    "id_tramite_sucursal": 353,
+                                    "nombre_tramite_sucursal": "IS03 EMISIÓN PENSIONADO IMSS",
+                                    "id_param_envio": 90874,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155561,
+                                            "id_relacion": 211,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "XXX",
+                                            "id_tipo_doc": 31,
+                                            "descripcion": "05 COPIA DE COMPROBANTE DE DOMICILIO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 2
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155562,
+                                            "id_relacion": 236,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "XX",
+                                            "id_tipo_doc": 56,
+                                            "descripcion": "08 COPIA DE ESTADO DE CUENTA BANCARIO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155563,
+                                            "id_relacion": 213,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "XX",
+                                            "id_tipo_doc": 33,
+                                            "descripcion": "10 IDENTIFICACION OFICIAL ANVERSO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155565,
+                                            "id_relacion": 248,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "XX",
+                                            "id_tipo_doc": 68,
+                                            "descripcion": "42 ORIGINAL FORMATO FORMA PAGO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155566,
+                                            "id_relacion": 224,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "XX",
+                                            "id_tipo_doc": 44,
+                                            "descripcion": "25 ORIGINAL DE FORMATO SOLICITUD DE CREDENCIAL Y FOTO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155972,
+                                            "id_relacion": 471,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE, DATOS GENERALES Y VIGENCIA",
+                                            "id_tipo_doc": 259,
+                                            "descripcion": "IDENTIFICACION OFICIAL REVERSO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155564,
+                                            "id_relacion": 444,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "XX",
+                                            "id_tipo_doc": 67,
+                                            "descripcion": "41 OFERTA ORIGIAL",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 2
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155963,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155964,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id_tramite_sucursal": 354,
+                                    "nombre_tramite_sucursal": "IS04 EMISION PENSIONADO ISSSTE",
+                                    "id_param_envio": 90875,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155567,
+                                            "id_relacion": 211,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "ZZ",
+                                            "id_tipo_doc": 31,
+                                            "descripcion": "05 COPIA DE COMPROBANTE DE DOMICILIO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 2
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155568,
+                                            "id_relacion": 236,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "XX",
+                                            "id_tipo_doc": 56,
+                                            "descripcion": "08 COPIA DE ESTADO DE CUENTA BANCARIO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155569,
+                                            "id_relacion": 213,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "XX",
+                                            "id_tipo_doc": 33,
+                                            "descripcion": "10 IDENTIFICACION OFICIAL ANVERSO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155571,
+                                            "id_relacion": 248,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "XX",
+                                            "id_tipo_doc": 68,
+                                            "descripcion": "42 ORIGINAL FORMATO FORMA PAGO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155572,
+                                            "id_relacion": 224,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "XX",
+                                            "id_tipo_doc": 44,
+                                            "descripcion": "25 ORIGINAL DE FORMATO SOLICITUD DE CREDENCIAL Y FOTO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155973,
+                                            "id_relacion": 471,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE, DATOS GENERALES Y VIGENCIA",
+                                            "id_tipo_doc": 259,
+                                            "descripcion": "IDENTIFICACION OFICIAL REVERSO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155570,
+                                            "id_relacion": 444,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "XX",
+                                            "id_tipo_doc": 67,
+                                            "descripcion": "41 OFERTA ORIGIAL",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 2
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155950,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id_tipo_tramite": 72,
+                            "nombre_tramite": "J RETENIDOS",
+                            "id_tipo_peticion": 7500,
+                            "subtramites": [
+                                {
+                                    "id_tramite_sucursal": 439,
+                                    "nombre_tramite_sucursal": "JS01 COMPLEMENTO DOCTOS TRAMITES RETENIDOS",
+                                    "id_param_envio": 91059,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155840,
+                                            "id_relacion": 242,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE DEBE INDICAR EN LAS NOTAS DL TRÁMITE EL COMPLMENENTO QUE ESTÁN ENVIANDO DEL TRÁMITE RETENIDO",
+                                            "id_tipo_doc": 62,
+                                            "descripcion": "16 NOTA DEL MOTIVO DE LA PETICION",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155951,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id_tipo_tramite": 74,
+                            "nombre_tramite": "L EMISION",
+                            "id_tipo_peticion": 7500,
+                            "subtramites": [
+                                {
+                                    "id_tramite_sucursal": 340,
+                                    "nombre_tramite_sucursal": "LS01 EMISION DE POLIZA",
+                                    "id_param_envio": 91110,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155902,
+                                            "id_relacion": 459,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "XX",
+                                            "id_tipo_doc": 33,
+                                            "descripcion": "10 IDENTIFICACION OFICIAL ANVERSO",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155904,
+                                            "id_relacion": 461,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "XX",
+                                            "id_tipo_doc": 56,
+                                            "descripcion": "08 COPIA DE ESTADO DE CUENTA BANCARIO",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 5
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155974,
+                                            "id_relacion": 471,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE, DATOS GENERALES Y VIGENCIA",
+                                            "id_tipo_doc": 259,
+                                            "descripcion": "IDENTIFICACION OFICIAL REVERSO",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155901,
+                                            "id_relacion": 458,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "XX",
+                                            "id_tipo_doc": 31,
+                                            "descripcion": "05 COPIA DE COMPROBANTE DE DOMICILIO",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 2
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155903,
+                                            "id_relacion": 460,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "XX",
+                                            "id_tipo_doc": 44,
+                                            "descripcion": "25 ORIGINAL DE FORMATO SOLICITUD DE CREDENCIAL Y FOTO",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155905,
+                                            "id_relacion": 462,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "XX",
+                                            "id_tipo_doc": 67,
+                                            "descripcion": "41 OFERTA ORIGIAL",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 2
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155906,
+                                            "id_relacion": 463,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "XX",
+                                            "id_tipo_doc": 68,
+                                            "descripcion": "42 ORIGINAL FORMATO FORMA PAGO",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155965,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id_tramite_sucursal": 313,
+                                    "nombre_tramite_sucursal": "LS03 EMISION POLIZA ISSSTE",
+                                    "id_param_envio": 91110,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155902,
+                                            "id_relacion": 459,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "XX",
+                                            "id_tipo_doc": 33,
+                                            "descripcion": "10 IDENTIFICACION OFICIAL ANVERSO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155904,
+                                            "id_relacion": 461,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "XX",
+                                            "id_tipo_doc": 56,
+                                            "descripcion": "08 COPIA DE ESTADO DE CUENTA BANCARIO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155974,
+                                            "id_relacion": 471,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "SE VALIDA NOMBRE, DATOS GENERALES Y VIGENCIA",
+                                            "id_tipo_doc": 259,
+                                            "descripcion": "IDENTIFICACION OFICIAL REVERSO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155901,
+                                            "id_relacion": 458,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "XX",
+                                            "id_tipo_doc": 31,
+                                            "descripcion": "05 COPIA DE COMPROBANTE DE DOMICILIO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 2
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155903,
+                                            "id_relacion": 460,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "XX",
+                                            "id_tipo_doc": 44,
+                                            "descripcion": "25 ORIGINAL DE FORMATO SOLICITUD DE CREDENCIAL Y FOTO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155905,
+                                            "id_relacion": 462,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "XX",
+                                            "id_tipo_doc": 67,
+                                            "descripcion": "41 OFERTA ORIGIAL",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 2
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155906,
+                                            "id_relacion": 463,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "XX",
+                                            "id_tipo_doc": 68,
+                                            "descripcion": "42 ORIGINAL FORMATO FORMA PAGO",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155965,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id_peticion": 2,
+                    "tipo_peticion_descripcion": "QUEJAS",
+                    "nodos": [
+                        {
+                            "id_tipo_tramite": 69,
+                            "nombre_tramite": "G QUEJAS",
+                            "id_tipo_peticion": 7501,
+                            "subtramites": [
+                                {
+                                    "id_tramite_sucursal": 437,
+                                    "nombre_tramite_sucursal": "GS01 ATENCION DE QUEJAS",
+                                    "id_param_envio": 91057,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155838,
+                                            "id_relacion": 242,
+                                            "opcional_obligatorio": 1,
+                                            "ayuda": "EL PENSIONADO DEBE INDICAR EL MOTIVO DE SU QUEJA DE FORMA CLARA",
+                                            "id_tipo_doc": 62,
+                                            "descripcion": "16 NOTA DEL MOTIVO DE LA PETICION",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155960,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7496,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id_peticion": 3,
+                    "tipo_peticion_descripcion": "INVESTIGACION",
+                    "nodos": [
+                        {
+                            "id_tipo_tramite": 70,
+                            "nombre_tramite": "H INVESTIGACIONES",
+                            "id_tipo_peticion": 7502,
+                            "subtramites": [
+                                {
+                                    "id_tramite_sucursal": 303,
+                                    "nombre_tramite_sucursal": "HS01 INVESTIGACIONES",
+                                    "id_param_envio": 90734,
+                                    "documentos": [
+                                        {
+                                            "id_param_envio_proceso": 155421,
+                                            "id_relacion": 242,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "NOTA",
+                                            "id_tipo_doc": 62,
+                                            "descripcion": "16 NOTA DEL MOTIVO DE LA PETICION",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 1
+                                        },
+                                        {
+                                            "id_param_envio_proceso": 155962,
+                                            "id_relacion": 470,
+                                            "opcional_obligatorio": 0,
+                                            "ayuda": "AGREGA DOCUMENTOS COMPLEMENTARIOS QUE APOYEN EL TRAMITE",
+                                            "id_tipo_doc": 258,
+                                            "descripcion": "DOCUMENTO REPRESENTANTE LEGAL",
+                                            "id_envia_documento": 7495,
+                                            "no_documentos": 5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

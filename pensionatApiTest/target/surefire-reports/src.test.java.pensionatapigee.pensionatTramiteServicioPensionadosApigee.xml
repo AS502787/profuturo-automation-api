@@ -1,0 +1,103 @@
+<testsuite failures="0" name="src/test/java/pensionatapigee/pensionatTramiteServicioPensionadosApigee.feature" skipped="0" tests="3" time="13.677048">
+  <testcase classname="src.test.java.pensionatapigee.pensionatTramiteServicioPensionadosApigee" name="Validar el acceso en la aplicación por medio del API sea correcta." time="0.940814">
+    <system-out>* def token = authInfo.authToken .......................................... passed
+* def requestAutenticacion = read('file:resources/requestJson/autenticacionUsuario.json') . passed
+Given url 'https://api.qa.profuturo.mx/1/empleados/autenticacionUsuario' .. passed
+And header Authorization = 'Bearer ' + token .............................. passed
+And header Content-Type = 'application/json' .............................. passed
+And request {"rqt":{"aplicacion":"expedientePensiones","contrasena":Profutur02019**,"usuario":MC501422}} . passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And if (responseStatus != 200) karate.fail('Error al obtener status 200') . passed
+And print 'Response: ', response .......................................... passed
+And match response == {"confirmacion":true,"numeroEmpleado":'501422'} ..... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.pensionatapigee.pensionatTramiteServicioPensionadosApigee" name="Validar que la información que se regresa del API sea correcta respecto a la póliza dada" time="11.956944">
+    <system-out>* def token = authInfo.authToken .......................................... passed
+* def requestAutenticacion = read('file:resources/requestJson/autenticacionUsuario.json') . passed
+Given url 'https://api.qa.profuturo.mx/1/empleados/autenticacionUsuario' .. passed
+And header Authorization = 'Bearer ' + token .............................. passed
+And header Content-Type = 'application/json' .............................. passed
+And request {"rqt":{"aplicacion":"expedientePensiones","contrasena":Profutur02019**,"usuario":MC501422}} . passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And if (responseStatus != 200) karate.fail('Error al obtener status 200') . passed
+And print 'Response: ', response .......................................... passed
+And match response == {"confirmacion":true,"numeroEmpleado":'501422'} ..... passed
+* def token = authInfo.authToken .......................................... passed
+* def requestPoliza = read('file:resources/requestJson/busquedaCtePoliza.json') . passed
+Given url 'https://api.qa.profuturo.mx/pensiones/1/pensionado/grupoFamiliar' . passed
+And header Authorization = 'Bearer ' + token .............................. passed
+And header Content-Type = 'application/json' .............................. passed
+And request {"poliza":'20180023887'} ...................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And if (responseStatus != 200) karate.fail('Error al obtener status 200') . passed
+And print 'Response: ',response ........................................... passed
+* def id_poliza = $.poliza[0].id_poliza ................................... passed
+* def id_grupo_pago = $.poliza[0].grupoPago[0].id_grupo_pago .............. passed
+* def id_beneficiario_poliza = $.poliza[0].grupoPago[0].beneficiario[1].id_beneficiario_poliza . passed
+And print 'id_poliza: ', id_poliza ........................................ passed
+And print 'id_grupo_pago: ', id_grupo_pago ................................ passed
+And print 'id_beneficiario_poliza: ', id_beneficiario_poliza .............. passed
+And match $.poliza[0].grupoPago[0].numero_renta_vitalicia == '20180023887' . passed
+* def requestDetalleCte = read('file:resources/requestJson/detalleCliente.json') . passed
+Given url 'https://api.qa.profuturo.mx/pensiones/1/pensionado/detalleCliente' . passed
+And header Authorization = 'Bearer ' + token .............................. passed
+And header Content-Type = 'application/json' .............................. passed
+And request {"consecutivo_beneficiario":0,"id_beneficiario_poliza":'#(id_beneficiario_poliza)',"id_grupo_pago":'#(id_grupo_pago)',"id_oferta":0,"id_poliza":'#(id_poliza)'} . passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And if (responseStatus != 200) karate.fail('Error al obtener status 200') . passed
+And print 'Response: ',response ........................................... passed
+And match response == {"code":200,"message":"Consulta exitosa","response":{"solicitante":{"id_oferta":1024683,"id_poliza":'#(id_poliza)',"id_grupo_pago":'#(id_grupo_pago)',"fecha_nacimiento":"","curp":"NAEM791207MTSCLR02","rfc":"NAEM791207","e_firma":"","apellido_paterno":"NACIANCENO","apellido_materno":"ELIAS","nombre":"MARCELA GUADALUPE","id_titular_cobro":228930,"ocupacion":"","correo":"","gpo_pago":1,"folio_oferta":"31805020893","domicilio":{"calle":"TAMAULIPAS","id_pais":141,"pais_descripcion":"MEXICO","asentamiento":"UNIDAD NACIONAL","ciudad":"CIUDAD MADERO","estado":"TAMAULIPAS","municipio":"CIUDAD MADERO","num_ext":"111","codigo_postal":"89410"},"telefonos":[{"id_telefono":15917551,"consecutivo_referencia":"","clave_nacional":"833","clave_internacional":"","indicador_preferente":0,"indicador_sms":0,"numero":"4534761","tipo_telefono":"MOVIL","extension":"","horario_de":"","horario_hasta":""}],"referencias":[{"id_parentesco":"591","desc_parentesco":"OTRO","id_referencia_personal":47010,"consecutivo_referencia":"","apellido_materno":"SMITH","apellido_paterno":"LUGO","consecutivo_grupo_pago":1,"nombre":"ALEJANDRA","telefonos":[]}],"datos_bancarios":{"descripcion":"BBVA BANCOMER","tipo_cuenta":"DEPOSITO EN CUENTA BANCARIA","clabe":"012813004634489676","id_banco":50}}}} . passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.pensionatapigee.pensionatTramiteServicioPensionadosApigee" name="Validar que los catálogos funcionen correctamente." time="0.77929">
+    <system-out>* def token = authInfo.authToken .......................................... passed
+* def requestAutenticacion = read('file:resources/requestJson/autenticacionUsuario.json') . passed
+Given url 'https://api.qa.profuturo.mx/1/empleados/autenticacionUsuario' .. passed
+And header Authorization = 'Bearer ' + token .............................. passed
+And header Content-Type = 'application/json' .............................. passed
+And request {"rqt":{"aplicacion":"expedientePensiones","contrasena":Profutur02019**,"usuario":MC501422}} . passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And if (responseStatus != 200) karate.fail('Error al obtener status 200') . passed
+And print 'Response: ', response .......................................... passed
+And match response == {"confirmacion":true,"numeroEmpleado":'501422'} ..... passed
+* def token = authInfo.authToken .......................................... passed
+* def requestPoliza = read('file:resources/requestJson/busquedaCtePoliza.json') . passed
+Given url 'https://api.qa.profuturo.mx/pensiones/1/pensionado/grupoFamiliar' . passed
+And header Authorization = 'Bearer ' + token .............................. passed
+And header Content-Type = 'application/json' .............................. passed
+And request {"poliza":'20180023887'} ...................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And if (responseStatus != 200) karate.fail('Error al obtener status 200') . passed
+And print 'Response: ',response ........................................... passed
+* def id_poliza = $.poliza[0].id_poliza ................................... passed
+* def id_grupo_pago = $.poliza[0].grupoPago[0].id_grupo_pago .............. passed
+* def id_beneficiario_poliza = $.poliza[0].grupoPago[0].beneficiario[1].id_beneficiario_poliza . passed
+And print 'id_poliza: ', id_poliza ........................................ passed
+And print 'id_grupo_pago: ', id_grupo_pago ................................ passed
+And print 'id_beneficiario_poliza: ', id_beneficiario_poliza .............. passed
+And match $.poliza[0].grupoPago[0].numero_renta_vitalicia == '20180023887' . passed
+* def requestDetalleCte = read('file:resources/requestJson/detalleCliente.json') . passed
+Given url 'https://api.qa.profuturo.mx/pensiones/1/pensionado/detalleCliente' . passed
+And header Authorization = 'Bearer ' + token .............................. passed
+And header Content-Type = 'application/json' .............................. passed
+And request {"consecutivo_beneficiario":0,"id_beneficiario_poliza":'#(id_beneficiario_poliza)',"id_grupo_pago":'#(id_grupo_pago)',"id_oferta":0,"id_poliza":'#(id_poliza)'} . passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And if (responseStatus != 200) karate.fail('Error al obtener status 200') . passed
+And print 'Response: ',response ........................................... passed
+And match response == {"code":200,"message":"Consulta exitosa","response":{"solicitante":{"id_oferta":1024683,"id_poliza":'#(id_poliza)',"id_grupo_pago":'#(id_grupo_pago)',"fecha_nacimiento":"","curp":"NAEM791207MTSCLR02","rfc":"NAEM791207","e_firma":"","apellido_paterno":"NACIANCENO","apellido_materno":"ELIAS","nombre":"MARCELA GUADALUPE","id_titular_cobro":228930,"ocupacion":"","correo":"","gpo_pago":1,"folio_oferta":"31805020893","domicilio":{"calle":"TAMAULIPAS","id_pais":141,"pais_descripcion":"MEXICO","asentamiento":"UNIDAD NACIONAL","ciudad":"CIUDAD MADERO","estado":"TAMAULIPAS","municipio":"CIUDAD MADERO","num_ext":"111","codigo_postal":"89410"},"telefonos":[{"id_telefono":15917551,"consecutivo_referencia":"","clave_nacional":"833","clave_internacional":"","indicador_preferente":0,"indicador_sms":0,"numero":"4534761","tipo_telefono":"MOVIL","extension":"","horario_de":"","horario_hasta":""}],"referencias":[{"id_parentesco":"591","desc_parentesco":"OTRO","id_referencia_personal":47010,"consecutivo_referencia":"","apellido_materno":"SMITH","apellido_paterno":"LUGO","consecutivo_grupo_pago":1,"nombre":"ALEJANDRA","telefonos":[]}],"datos_bancarios":{"descripcion":"BBVA BANCOMER","tipo_cuenta":"DEPOSITO EN CUENTA BANCARIA","clabe":"012813004634489676","id_banco":50}}}} . passed
+* def token = authInfo.authToken .......................................... passed
+Given url 'https://api.qa.profuturo.mx/pensiones/1/catalogos' ............. passed
+And header Content-Type = 'application/x-www-form-urlencoded' ............. passed
+And header Authorization = 'Bearer ' + token .............................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And if (responseStatus != 200) karate.fail('Error al obtener status 200') . passed
+And print 'Response: ',response ........................................... passed</system-out>
+  </testcase>
+</testsuite>

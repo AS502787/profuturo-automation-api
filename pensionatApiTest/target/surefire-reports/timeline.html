@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-1"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"pensionatTramiteServicioPensionadosApigee[1.1:6]","start":2961,"end":3903,"title":"pensionatTramiteServicioPensionadosApigee[1.1:6] 18:00:02.961-18:00:03.903 Validar el acceso en la aplicación por medio del API sea correcta."},{"id":2,"group":1,"content":"pensionatTramiteServicioPensionadosApigee[2.1:21]","start":3903,"end":15865,"title":"pensionatTramiteServicioPensionadosApigee[2.1:21] 18:00:03.903-18:00:15.865 Validar que la información que se regresa del API sea correcta respecto a la póliza dada"},{"id":3,"group":1,"content":"pensionatTramiteServicioPensionadosApigee[3:54]","start":15872,"end":16655,"title":"pensionatTramiteServicioPensionadosApigee[3:54] 18:00:15.872-18:00:16.655 Validar que los catálogos funcionen correctamente."}]);
+var container = document.getElementById('visualization');
+var timeline = new vis.Timeline(container);
+timeline.setOptions({ groupOrder: 'content' });
+timeline.setGroups(groups);
+timeline.setItems(items);
+</script>
+  </body>
+</html>

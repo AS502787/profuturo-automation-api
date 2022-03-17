@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.test.java.pensionatapigee.pensionatBusquedaCtePolizaApigee</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">0</div>
+            
+<div class="bg-danger" id="nav-fail">1</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2020-11-02 09:23:01 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item failed">
+<a href="#[1:11]">[1:11] Validar que la informaci&oacute;n que se regresa del API sea correcta respecto a la p&oacute;liza dada. </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/pensionatapigee/pensionatBusquedaCtePolizaApigee.feature</span><span class="feature-description">MVP_API_B&uacute;squeda de cliente por p&oacute;liza</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:11]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:11]</span><span class="scenario-name">Validar que la informaci&oacute;n que se regresa del API sea correcta respecto a la p&oacute;liza dada. </span>
+</div>
+<div class="scenario-time failed">ms: 30303</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:11]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* def requestPoliza = read('file:resources/requestJson/busquedaCtePoliza.json')</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="preformatted" data-parent="1">21:22:31.198 &lt;&lt; lock released, cached callSingle: classpath:pensionatapigee/pensionatGetTokenApigee.feature</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="1.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">pensionatapigee/pensionatGetTokenApigee.feature</div>
+</div>
+<div class="time-cell passed">1442</div>
+</div>
+<div class="callarg-container" data-parent="1.1">
+<div class="step-ref"> 
+</div>
+<div class="preformatted">{
+  "env": "dev",
+  "myVarName": "someValue",
+  "authInfo": {
+    "authTime": null,
+    "authToken": "cABIAUAfUiNutcuJGYw2lGndVux6"
+  }
+}
+</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def requestToken =</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="2">{
+	'client_id' : '21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO',
+	'client_secret' : 'g4QQkgiNr1xcqao1',
+	'grant_type' : 'client_credentials'
+}
+21:22:29.657 karate.env system property was:  
+21:22:29.661 &gt;&gt; lock acquired, begin callSingle: classpath:pensionatapigee/pensionatGetTokenApigee.feature</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="3">
+<div class="step-ref bg-step">3</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given url 'https://api.qa.profuturo.mx/oauth2/token'</div>
+</div>
+<div class="time-cell passed">8</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="4">
+<div class="step-ref bg-step">4</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And header Content-Type = 'application/x-www-form-urlencoded'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="5">
+<div class="step-ref bg-step">5</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And form fields requestToken</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="6">
+<div class="step-ref bg-step">6</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">1407</div>
+</div>
+<div class="preformatted" data-parent="6">21:22:30.594 request:
+1 &gt; POST https://api.qa.profuturo.mx/oauth2/token
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 103
+1 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 &gt; Host: api.qa.profuturo.mx
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+client_id=21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO&amp;client_secret=g4QQkgiNr1xcqao1&amp;grant_type=client_credentials
+
+21:22:31.172 response time in milliseconds: 576.95
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 623
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 03 Nov 2020 03:22:32 GMT
+{
+  "refresh_token_expires_in" : "0",
+  "api_product_list" : "[ Pensiones_Tramites_QA, Grupo_Empleados_QA]",
+  "api_product_list_json" : [ " Pensiones_Tramites_QA", "Grupo_Empleados_QA" ],
+  "organization_name" : "profuturo",
+  "developer.email" : "jose.luis.rojas.perez@everis.com",
+  "token_type" : "BearerToken",
+  "issued_at" : "1604373752672",
+  "nombre" : "",
+  "client_id" : "21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO",
+  "access_token" : "cABIAUAfUiNutcuJGYw2lGndVux6",
+  "application_name" : "85928fe5-309b-4f9a-a4d5-8513965b63a8",
+  "scope" : "",
+  "expires_in" : "3599",
+  "refresh_count" : "0",
+  "status" : "approved"
+}</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="7">
+<div class="step-ref bg-step">7</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="8">
+<div class="step-ref bg-step">8</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* if (responseStatus != 200) karate.fail('Error al obtener status 200')</div>
+</div>
+<div class="time-cell passed">7</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="9">
+<div class="step-ref bg-step">9</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then print 'Response: ', response</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="9">21:22:31.184 [print] Response:  {
+  "refresh_token_expires_in": "0",
+  "api_product_list": "[ Pensiones_Tramites_QA, Grupo_Empleados_QA]",
+  "api_product_list_json": [
+    " Pensiones_Tramites_QA",
+    "Grupo_Empleados_QA"
+  ],
+  "organization_name": "profuturo",
+  "developer.email": "jose.luis.rojas.perez@everis.com",
+  "token_type": "BearerToken",
+  "issued_at": "1604373752672",
+  "nombre": "",
+  "client_id": "21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO",
+  "access_token": "cABIAUAfUiNutcuJGYw2lGndVux6",
+  "application_name": "85928fe5-309b-4f9a-a4d5-8513965b63a8",
+  "scope": "",
+  "expires_in": "3599",
+  "refresh_count": "0",
+  "status": "approved"
+}</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="10">
+<div class="step-ref bg-step">10</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def access_token = response.access_token</div>
+</div>
+<div class="time-cell passed">7</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="11">
+<div class="step-ref bg-step">11</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then print 'Token: ', access_token</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="preformatted" data-parent="11">21:22:31.196 [print] Token:  cABIAUAfUiNutcuJGYw2lGndVux6</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="12">
+<div class="step-ref bg-step">12</div>
+<div class="step-cell passed">* def time = authInfo.authTime</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="13">
+<div class="step-ref bg-step">13</div>
+<div class="step-cell passed">* def token = authInfo.authToken</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="14">
+<div class="step-ref bg-step">14</div>
+<div class="step-cell passed">* print token</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="14">21:22:31.221 [print] cABIAUAfUiNutcuJGYw2lGndVux6</div>
+<div class="step-row" data-parent="[1:11]bg">
+<div class="step-container" id="15">
+<div class="step-ref bg-step">15</div>
+<div class="step-cell passed">* print time</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="15">21:22:31.221 [print]</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">Given url 'https://api.qa.profuturo.mx/pensiones/2/pensionado/grupoFamiliar'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-cell passed">And header Authorization = 'Bearer ' + token</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref passed">18</div>
+<div class="step-cell passed">And header Content-Type = 'application/json'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-cell passed">And request requestPoliza</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="20">
+<div class="step-ref failed">20</div>
+<div class="step-cell failed">When method POST</div>
+</div>
+<div class="time-cell failed">30280</div>
+</div>
+<div class="preformatted" data-parent="20">21:22:31.235 request:
+1 &gt; POST https://api.qa.profuturo.mx/pensiones/2/pensionado/grupoFamiliar
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer cABIAUAfUiNutcuJGYw2lGndVux6
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 24
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: api.qa.profuturo.mx
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"poliza":"20180023887"}
+
+21:23:01.512 java.net.SocketTimeoutException: Read timed out, http call failed after 30276 milliseconds for URL: https://api.qa.profuturo.mx/pensiones/2/pensionado/grupoFamiliar
+21:23:01.512 http request failed: 
+java.net.SocketTimeoutException: Read timed out
+pensionatBusquedaCtePolizaApigee.feature:17 - 
+java.net.SocketTimeoutException: Read timed out</div>
+<div class="step-row">
+<div class="step-container" id="21">
+<div class="step-ref skipped">21</div>
+<div class="step-cell skipped">Then status 200</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="22">
+<div class="step-ref skipped">22</div>
+<div class="step-cell skipped">* if (responseStatus != 200) karate.fail('Error al obtener status 200')</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="23">
+<div class="step-ref skipped">23</div>
+<div class="step-cell skipped">Then print 'Response: ',response</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="24">
+<div class="step-ref skipped">24</div>
+<div class="step-cell skipped">And match $.poliza[0].grupoPago[0].numero_renta_vitalicia == "20180023887"</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

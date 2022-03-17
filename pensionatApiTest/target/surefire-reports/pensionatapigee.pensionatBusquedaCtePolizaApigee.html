@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>pensionatapigee.pensionatBusquedaCtePolizaApigee</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">1</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2020-10-27 11:03:32 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:8]">[1:8] Validar el acceso en la aplicaci&oacute;n por medio del API sea correcta. </a>
+</div>
+<div class="nav-item failed">
+<a href="#[2:20]">[2:20] Validar que la informaci&oacute;n que se regresa del API sea correcta respecto a la p&oacute;liza dada. </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">pensionatapigee/pensionatBusquedaCtePolizaApigee.feature</span><span class="feature-description">B&uacute;squeda de cliente por p&oacute;liza</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:8]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:8]</span><span class="scenario-name">Validar el acceso en la aplicaci&oacute;n por medio del API sea correcta. </span>
+</div>
+<div class="scenario-time passed">ms: 2352</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:8]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* def tokenFeature = call read('pensionatGetTokenApigee.feature')</div>
+</div>
+<div class="time-cell passed">1451</div>
+</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="1.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">pensionatapigee/pensionatGetTokenApigee.feature</div>
+</div>
+<div class="time-cell passed">1432</div>
+</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def requestToken =</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="2">{
+	'client_id' : '21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO',
+	'client_secret' : 'g4QQkgiNr1xcqao1',
+	'grant_type' : 'client_credentials'
+}
+23:03:25.575 karate.env system property was:</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="3">
+<div class="step-ref bg-step">3</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given url 'https://api.qa.profuturo.mx/oauth2/token'</div>
+</div>
+<div class="time-cell passed">8</div>
+</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="4">
+<div class="step-ref bg-step">4</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And header Content-Type = 'application/x-www-form-urlencoded'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="5">
+<div class="step-ref bg-step">5</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And form fields requestToken</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="6">
+<div class="step-ref bg-step">6</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">1407</div>
+</div>
+<div class="preformatted" data-parent="6">23:03:26.432 request:
+1 &gt; POST https://api.qa.profuturo.mx/oauth2/token
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 103
+1 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 &gt; Host: api.qa.profuturo.mx
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+client_id=21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO&amp;client_secret=g4QQkgiNr1xcqao1&amp;grant_type=client_credentials
+
+23:03:27.065 response time in milliseconds: 630.95
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 623
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 28 Oct 2020 05:03:26 GMT
+{
+  "refresh_token_expires_in" : "0",
+  "api_product_list" : "[ Pensiones_Tramites_QA, Grupo_Empleados_QA]",
+  "api_product_list_json" : [ " Pensiones_Tramites_QA", "Grupo_Empleados_QA" ],
+  "organization_name" : "profuturo",
+  "developer.email" : "jose.luis.rojas.perez@everis.com",
+  "token_type" : "BearerToken",
+  "issued_at" : "1603861406514",
+  "nombre" : "",
+  "client_id" : "21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO",
+  "access_token" : "wbeg5ktzPYAyJtFAIiS18bS8w5AP",
+  "application_name" : "85928fe5-309b-4f9a-a4d5-8513965b63a8",
+  "scope" : "",
+  "expires_in" : "3599",
+  "refresh_count" : "0",
+  "status" : "approved"
+}</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="7">
+<div class="step-ref bg-step">7</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="8">
+<div class="step-ref bg-step">8</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then print 'Response: ',response</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="8">23:03:27.069 [print] Response:  {
+  "refresh_token_expires_in": "0",
+  "api_product_list": "[ Pensiones_Tramites_QA, Grupo_Empleados_QA]",
+  "api_product_list_json": [
+    " Pensiones_Tramites_QA",
+    "Grupo_Empleados_QA"
+  ],
+  "organization_name": "profuturo",
+  "developer.email": "jose.luis.rojas.perez@everis.com",
+  "token_type": "BearerToken",
+  "issued_at": "1603861406514",
+  "nombre": "",
+  "client_id": "21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO",
+  "access_token": "wbeg5ktzPYAyJtFAIiS18bS8w5AP",
+  "application_name": "85928fe5-309b-4f9a-a4d5-8513965b63a8",
+  "scope": "",
+  "expires_in": "3599",
+  "refresh_count": "0",
+  "status": "approved"
+}</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="9">
+<div class="step-ref bg-step">9</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def getToken = response.access_token</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="10">
+<div class="step-ref bg-step">10</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then print 'Token: ',getToken</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="10">23:03:27.077 [print] Token:  wbeg5ktzPYAyJtFAIiS18bS8w5AP</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="11">
+<div class="step-ref bg-step">11</div>
+<div class="step-cell passed">* def getToken = tokenFeature.getToken</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">* def requestAutenticacion = read('autenticacionUsuario.json')</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">Given url 'https://api.qa.profuturo.mx/1/empleados/autenticacionUsuario'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">And header Authorization = 'Bearer ' + getToken</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">And header Content-Type = 'application/json'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">And request requestAutenticacion</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">881</div>
+</div>
+<div class="preformatted" data-parent="17">23:03:27.099 request:
+1 &gt; POST https://api.qa.profuturo.mx/1/empleados/autenticacionUsuario
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer wbeg5ktzPYAyJtFAIiS18bS8w5AP
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 96
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: api.qa.profuturo.mx
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"rqt":{"aplicacion":"expedientePensiones","contrasena":"Profutur02019**","usuario":"MC501422"}}
+
+23:03:27.977 response time in milliseconds: 876.95
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json;charset=utf-8
+1 &lt; Date: Wed, 28 Oct 2020 05:03:27 GMT
+1 &lt; Server: Apache-Coyote/1.1
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Backside-Transport: OK OK
+1 &lt; X-Global-Transaction-ID: c388aa805f98fb9f4ff37dc7
+{"confirmacion":true,"numeroEmpleado":"501422"}</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref passed">18</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-cell passed">And match response == {"confirmacion":true,"numeroEmpleado":"501422"}</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2:20]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [2:20]</span><span class="scenario-name">Validar que la informaci&oacute;n que se regresa del API sea correcta respecto a la p&oacute;liza dada. </span>
+</div>
+<div class="scenario-time failed">ms: 4017</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2:20]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="20">
+<div class="step-ref bg-step">20</div>
+<div class="step-cell passed">* def tokenFeature = call read('pensionatGetTokenApigee.feature')</div>
+</div>
+<div class="time-cell passed">327</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="20.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">pensionatapigee/pensionatGetTokenApigee.feature</div>
+</div>
+<div class="time-cell passed">318</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="21">
+<div class="step-ref bg-step">21</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def requestToken =</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="21">{
+	'client_id' : '21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO',
+	'client_secret' : 'g4QQkgiNr1xcqao1',
+	'grant_type' : 'client_credentials'
+}
+23:03:27.992 karate.env system property was:</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="22">
+<div class="step-ref bg-step">22</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given url 'https://api.qa.profuturo.mx/oauth2/token'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="23">
+<div class="step-ref bg-step">23</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And header Content-Type = 'application/x-www-form-urlencoded'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="24">
+<div class="step-ref bg-step">24</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And form fields requestToken</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="25">
+<div class="step-ref bg-step">25</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">314</div>
+</div>
+<div class="preformatted" data-parent="25">23:03:28.005 request:
+1 &gt; POST https://api.qa.profuturo.mx/oauth2/token
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 103
+1 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 &gt; Host: api.qa.profuturo.mx
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+client_id=21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO&amp;client_secret=g4QQkgiNr1xcqao1&amp;grant_type=client_credentials
+
+23:03:28.317 response time in milliseconds: 311.34
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 623
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 28 Oct 2020 05:03:27 GMT
+{
+  "refresh_token_expires_in" : "0",
+  "api_product_list" : "[ Pensiones_Tramites_QA, Grupo_Empleados_QA]",
+  "api_product_list_json" : [ " Pensiones_Tramites_QA", "Grupo_Empleados_QA" ],
+  "organization_name" : "profuturo",
+  "developer.email" : "jose.luis.rojas.perez@everis.com",
+  "token_type" : "BearerToken",
+  "issued_at" : "1603861407777",
+  "nombre" : "",
+  "client_id" : "21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO",
+  "access_token" : "C3PG5hFz2aA4yuyBWfwAM4LYToYB",
+  "application_name" : "85928fe5-309b-4f9a-a4d5-8513965b63a8",
+  "scope" : "",
+  "expires_in" : "3599",
+  "refresh_count" : "0",
+  "status" : "approved"
+}</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="26">
+<div class="step-ref bg-step">26</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="27">
+<div class="step-ref bg-step">27</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then print 'Response: ',response</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="27">23:03:28.318 [print] Response:  {
+  "refresh_token_expires_in": "0",
+  "api_product_list": "[ Pensiones_Tramites_QA, Grupo_Empleados_QA]",
+  "api_product_list_json": [
+    " Pensiones_Tramites_QA",
+    "Grupo_Empleados_QA"
+  ],
+  "organization_name": "profuturo",
+  "developer.email": "jose.luis.rojas.perez@everis.com",
+  "token_type": "BearerToken",
+  "issued_at": "1603861407777",
+  "nombre": "",
+  "client_id": "21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO",
+  "access_token": "C3PG5hFz2aA4yuyBWfwAM4LYToYB",
+  "application_name": "85928fe5-309b-4f9a-a4d5-8513965b63a8",
+  "scope": "",
+  "expires_in": "3599",
+  "refresh_count": "0",
+  "status": "approved"
+}</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="28">
+<div class="step-ref bg-step">28</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def getToken = response.access_token</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="29">
+<div class="step-ref bg-step">29</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then print 'Token: ',getToken</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="29">23:03:28.319 [print] Token:  C3PG5hFz2aA4yuyBWfwAM4LYToYB</div>
+<div class="step-row" data-parent="[2:20]bg">
+<div class="step-container" id="30">
+<div class="step-ref bg-step">30</div>
+<div class="step-cell passed">* def getToken = tokenFeature.getToken</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="31">
+<div class="step-ref passed">31</div>
+<div class="step-cell passed">* def requestPoliza = read('busquedaCtePoliza.json')</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="32">
+<div class="step-ref passed">32</div>
+<div class="step-cell passed">Given url 'https://api.qa.profuturo.mx/pensiones/2/pensionado/grupoFamiliar'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="33">
+<div class="step-ref passed">33</div>
+<div class="step-cell passed">And header Authorization = 'Bearer ' + getToken</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="34">
+<div class="step-ref passed">34</div>
+<div class="step-cell passed">And header Content-Type = 'application/json'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="35">
+<div class="step-ref passed">35</div>
+<div class="step-cell passed">And request requestPoliza</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="36">
+<div class="step-ref passed">36</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">3680</div>
+</div>
+<div class="preformatted" data-parent="36">23:03:28.328 request:
+1 &gt; POST https://api.qa.profuturo.mx/pensiones/2/pensionado/grupoFamiliar
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer C3PG5hFz2aA4yuyBWfwAM4LYToYB
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 24
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: api.qa.profuturo.mx
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"poliza":"20180023887"}
+
+23:03:32.006 response time in milliseconds: 3677.08
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Date: Wed, 28 Oct 2020 05:03:31 GMT
+1 &lt; Transfer-Encoding: chunked
+{"poliza":[{"id_poliza":116439,"id_tipo_regimen_pol":2980,"desc_tipo_regimen_pol":"IMSS","id_estatus_poliza":43,"estatus_poliza":"VIGENTE","id_tipo_pension_pol":614,"tipo_pension_pol":"VO","grupoPago":[{"id_oferta":null,"id_tipo_regimen_of":null,"desc_tipo_regimen_of":null,"numero_oferta":null,"nss_of":null,"apmaterno_of":null,"appaterno_of":null,"nombre_of":null,"curp_of":null,"folio_identificador_of":null,"id_sexo_of":null,"desc_sexo_of":null,"id_tipo_seguro_of":null,"tipo_seguro_ofe":null,"id_tipo_pension_of":null,"tipo_pension_ofe":null,"nombre_solicitante_of":null,"numero_renta_vitalicia":"20180023887","estatus_oferta":null,"nss_pol":"41038007088","amaterno_pol":"ORTIZ","apaterno_pol":"MAYA","nombre_pol":"DANIEL","curp_pol":"MAOD800810HTSYRN03","folio_identificador_pol":null,"id_sexo_pol":652,"desc_sexo_pol":"M","id_ramo_seguro_pol":6,"tipo_seguro_pol":"IM","nombre_solicitante_pol":null,"gpo_pago":1,"id_grupo_pago":589558,"id_tipo_pension_pol":null,"tipo_pension_pol":null,"fecha_nacimiento_of":null,"apellido_paterno_tc":"NACIANCENO","apellido_materno_tc":"ELIAS","nombre_tc":"MARCELA GUADALUPE","beneficiario":[{"id_beneficiario_poliza":136899,"consecutivo_beneficiario":0,"nombre_completo":"MAYA ORTIZ DANIEL                                           ","id_parentesco":593,"desc_parentesco":"PRINCIPAL","id_sexo":652,"desc_sexo_ben":"M","fecha_nacimiento":"10/08/1980","id_estatus_beneficiario":192,"estatus_beneficiario":"INACTIVO","id_grupo_pago":589558},{"id_beneficiario_poliza":136898,"consecutivo_beneficiario":1,"nombre_completo":"NACIANCENO ELIAS MARCELA GUADALUPE                          ","id_parentesco":583,"desc_parentesco":"ESPOSO (A)","id_sexo":651,"desc_sexo_ben":"F","fecha_nacimiento":"07/12/1979","id_estatus_beneficiario":190,"estatus_beneficiario":"ACTIVO","id_grupo_pago":589558},{"id_beneficiario_poliza":136897,"consecutivo_beneficiario":2,"nombre_completo":"MAYA NACIANCENO DANIEL                                      ","id_parentesco":586,"desc_parentesco":"HIJO (A)","id_sexo":652,"desc_sexo_ben":"M","fecha_nacimiento":"12/04/2008","id_estatus_beneficiario":190,"estatus_beneficiario":"ACTIVO","id_grupo_pago":589558}]}]}]}</div>
+<div class="step-row">
+<div class="step-container" id="37">
+<div class="step-ref passed">37</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="38">
+<div class="step-ref passed">38</div>
+<div class="step-cell passed">Then print 'Response: ',response</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="38">23:03:32.008 [print] Response:  {
+  "poliza": [
+    {
+      "desc_tipo_regimen_pol": "IMSS",
+      "id_poliza": 116439,
+      "tipo_pension_pol": "VO",
+      "id_estatus_poliza": 43,
+      "id_tipo_pension_pol": 614,
+      "grupoPago": [
+        {
+          "nombre_solicitante_of": null,
+          "estatus_oferta": null,
+          "tipo_seguro_pol": "IM",
+          "nombre_of": null,
+          "id_tipo_regimen_of": null,
+          "id_grupo_pago": 589558,
+          "apaterno_pol": "MAYA",
+          "curp_pol": "MAOD800810HTSYRN03",
+          "tipo_pension_pol": null,
+          "nombre_pol": "DANIEL",
+          "id_sexo_of": null,
+          "id_tipo_pension_of": null,
+          "id_sexo_pol": 652,
+          "desc_tipo_regimen_of": null,
+          "nss_of": null,
+          "id_tipo_pension_pol": null,
+          "fecha_nacimiento_of": null,
+          "folio_identificador_pol": null,
+          "desc_sexo_pol": "M",
+          "apellido_paterno_tc": "NACIANCENO",
+          "appaterno_of": null,
+          "apellido_materno_tc": "ELIAS",
+          "desc_sexo_of": null,
+          "nombre_tc": "MARCELA GUADALUPE",
+          "tipo_seguro_ofe": null,
+          "curp_of": null,
+          "numero_oferta": null,
+          "nombre_solicitante_pol": null,
+          "apmaterno_of": null,
+          "numero_renta_vitalicia": "20180023887",
+          "beneficiario": [
+            {
+              "id_grupo_pago": 589558,
+              "nombre_completo": "MAYA ORTIZ DANIEL                                           ",
+              "estatus_beneficiario": "INACTIVO",
+              "desc_sexo_ben": "M",
+              "consecutivo_beneficiario": 0,
+              "id_beneficiario_poliza": 136899,
+              "desc_parentesco": "PRINCIPAL",
+              "fecha_nacimiento": "10/08/1980",
+              "id_parentesco": 593,
+              "id_sexo": 652,
+              "id_estatus_beneficiario": 192
+            },
+            {
+              "id_grupo_pago": 589558,
+              "nombre_completo": "NACIANCENO ELIAS MARCELA GUADALUPE                          ",
+              "estatus_beneficiario": "ACTIVO",
+              "desc_sexo_ben": "F",
+              "consecutivo_beneficiario": 1,
+              "id_beneficiario_poliza": 136898,
+              "desc_parentesco": "ESPOSO (A)",
+              "fecha_nacimiento": "07/12/1979",
+              "id_parentesco": 583,
+              "id_sexo": 651,
+              "id_estatus_beneficiario": 190
+            },
+            {
+              "id_grupo_pago": 589558,
+              "nombre_completo": "MAYA NACIANCENO DANIEL                                      ",
+              "estatus_beneficiario": "ACTIVO",
+              "desc_sexo_ben": "M",
+              "consecutivo_beneficiario": 2,
+              "id_beneficiario_poliza": 136897,
+              "desc_parentesco": "HIJO (A)",
+              "fecha_nacimiento": "12/04/2008",
+              "id_parentesco": 586,
+              "id_sexo": 652,
+              "id_estatus_beneficiario": 190
+            }
+          ],
+          "nss_pol": "41038007088",
+          "folio_identificador_of": null,
+          "id_ramo_seguro_pol": 6,
+          "tipo_pension_ofe": null,
+          "id_oferta": null,
+          "id_tipo_seguro_of": null,
+          "amaterno_pol": "ORTIZ",
+          "gpo_pago": 1
+        }
+      ],
+      "id_tipo_regimen_pol": 2980,
+      "estatus_poliza": "VIGENTE"
+    }
+  ]
+}</div>
+<div class="step-row">
+<div class="step-container" id="39">
+<div class="step-ref failed">39</div>
+<div class="step-cell failed">And match response == {"poliza":"20180023887"}</div>
+</div>
+<div class="time-cell failed">2</div>
+</div>
+<div class="preformatted" data-parent="39">23:03:32.010 assertion failed: path: $.poliza, actual: [{"desc_tipo_regimen_pol":"IMSS","id_poliza":116439,"tipo_pension_pol":"VO","id_estatus_poliza":43,"id_tipo_pension_pol":614,"grupoPago":[{"nombre_solicitante_of":null,"estatus_oferta":null,"tipo_seguro_pol":"IM","nombre_of":null,"id_tipo_regimen_of":null,"id_grupo_pago":589558,"apaterno_pol":"MAYA","curp_pol":"MAOD800810HTSYRN03","tipo_pension_pol":null,"nombre_pol":"DANIEL","id_sexo_of":null,"id_tipo_pension_of":null,"id_sexo_pol":652,"desc_tipo_regimen_of":null,"nss_of":null,"id_tipo_pension_pol":null,"fecha_nacimiento_of":null,"folio_identificador_pol":null,"desc_sexo_pol":"M","apellido_paterno_tc":"NACIANCENO","appaterno_of":null,"apellido_materno_tc":"ELIAS","desc_sexo_of":null,"nombre_tc":"MARCELA GUADALUPE","tipo_seguro_ofe":null,"curp_of":null,"numero_oferta":null,"nombre_solicitante_pol":null,"apmaterno_of":null,"numero_renta_vitalicia":"20180023887","beneficiario":[{"id_grupo_pago":589558,"nombre_completo":"MAYA ORTIZ DANIEL                                           ","estatus_beneficiario":"INACTIVO","desc_sexo_ben":"M","consecutivo_beneficiario":0,"id_beneficiario_poliza":136899,"desc_parentesco":"PRINCIPAL","fecha_nacimiento":"10\/08\/1980","id_parentesco":593,"id_sexo":652,"id_estatus_beneficiario":192},{"id_grupo_pago":589558,"nombre_completo":"NACIANCENO ELIAS MARCELA GUADALUPE                          ","estatus_beneficiario":"ACTIVO","desc_sexo_ben":"F","consecutivo_beneficiario":1,"id_beneficiario_poliza":136898,"desc_parentesco":"ESPOSO (A)","fecha_nacimiento":"07\/12\/1979","id_parentesco":583,"id_sexo":651,"id_estatus_beneficiario":190},{"id_grupo_pago":589558,"nombre_completo":"MAYA NACIANCENO DANIEL                                      ","estatus_beneficiario":"ACTIVO","desc_sexo_ben":"M","consecutivo_beneficiario":2,"id_beneficiario_poliza":136897,"desc_parentesco":"HIJO (A)","fecha_nacimiento":"12\/04\/2008","id_parentesco":586,"id_sexo":652,"id_estatus_beneficiario":190}],"nss_pol":"41038007088","folio_identificador_of":null,"id_ramo_seguro_pol":6,"tipo_pension_ofe":null,"id_oferta":null,"id_tipo_seguro_of":null,"amaterno_pol":"ORTIZ","gpo_pago":1}],"id_tipo_regimen_pol":2980,"estatus_poliza":"VIGENTE"}], expected: '20180023887', reason: actual value is not a string
+pensionatBusquedaCtePolizaApigee.feature:31 - path: $.poliza, actual: [{"desc_tipo_regimen_pol":"IMSS","id_poliza":116439,"tipo_pension_pol":"VO","id_estatus_poliza":43,"id_tipo_pension_pol":614,"grupoPago":[{"nombre_solicitante_of":null,"estatus_oferta":null,"tipo_seguro_pol":"IM","nombre_of":null,"id_tipo_regimen_of":null,"id_grupo_pago":589558,"apaterno_pol":"MAYA","curp_pol":"MAOD800810HTSYRN03","tipo_pension_pol":null,"nombre_pol":"DANIEL","id_sexo_of":null,"id_tipo_pension_of":null,"id_sexo_pol":652,"desc_tipo_regimen_of":null,"nss_of":null,"id_tipo_pension_pol":null,"fecha_nacimiento_of":null,"folio_identificador_pol":null,"desc_sexo_pol":"M","apellido_paterno_tc":"NACIANCENO","appaterno_of":null,"apellido_materno_tc":"ELIAS","desc_sexo_of":null,"nombre_tc":"MARCELA GUADALUPE","tipo_seguro_ofe":null,"curp_of":null,"numero_oferta":null,"nombre_solicitante_pol":null,"apmaterno_of":null,"numero_renta_vitalicia":"20180023887","beneficiario":[{"id_grupo_pago":589558,"nombre_completo":"MAYA ORTIZ DANIEL                                           ","estatus_beneficiario":"INACTIVO","desc_sexo_ben":"M","consecutivo_beneficiario":0,"id_beneficiario_poliza":136899,"desc_parentesco":"PRINCIPAL","fecha_nacimiento":"10\/08\/1980","id_parentesco":593,"id_sexo":652,"id_estatus_beneficiario":192},{"id_grupo_pago":589558,"nombre_completo":"NACIANCENO ELIAS MARCELA GUADALUPE                          ","estatus_beneficiario":"ACTIVO","desc_sexo_ben":"F","consecutivo_beneficiario":1,"id_beneficiario_poliza":136898,"desc_parentesco":"ESPOSO (A)","fecha_nacimiento":"07\/12\/1979","id_parentesco":583,"id_sexo":651,"id_estatus_beneficiario":190},{"id_grupo_pago":589558,"nombre_completo":"MAYA NACIANCENO DANIEL                                      ","estatus_beneficiario":"ACTIVO","desc_sexo_ben":"M","consecutivo_beneficiario":2,"id_beneficiario_poliza":136897,"desc_parentesco":"HIJO (A)","fecha_nacimiento":"12\/04\/2008","id_parentesco":586,"id_sexo":652,"id_estatus_beneficiario":190}],"nss_pol":"41038007088","folio_identificador_of":null,"id_ramo_seguro_pol":6,"tipo_pension_ofe":null,"id_oferta":null,"id_tipo_seguro_of":null,"amaterno_pol":"ORTIZ","gpo_pago":1}],"id_tipo_regimen_pol":2980,"estatus_poliza":"VIGENTE"}], expected: '20180023887', reason: actual value is not a string</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

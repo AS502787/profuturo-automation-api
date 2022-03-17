@@ -1,0 +1,64 @@
+15:35:14.619 karate.env system property was:  
+15:35:14.623 >> lock acquired, begin callSingle: classpath:pensionatapigee/pensionatGetTokenApigee.feature
+15:35:15.731 request:
+1 > POST https://api.qa.profuturo.mx/oauth2/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 103
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: api.qa.profuturo.mx
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+client_id=21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO&client_secret=g4QQkgiNr1xcqao1&grant_type=client_credentials
+
+15:35:16.474 response time in milliseconds: 742.16
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 623
+1 < Content-Type: application/json
+1 < Date: Wed, 27 Jan 2021 21:35:16 GMT
+{
+  "refresh_token_expires_in" : "0",
+  "api_product_list" : "[ Pensiones_Tramites_QA, Grupo_Empleados_QA]",
+  "api_product_list_json" : [ " Pensiones_Tramites_QA", "Grupo_Empleados_QA" ],
+  "organization_name" : "profuturo",
+  "developer.email" : "jose.luis.rojas.perez@everis.com",
+  "token_type" : "BearerToken",
+  "issued_at" : "1611783316355",
+  "nombre" : "",
+  "client_id" : "21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO",
+  "access_token" : "0Kpytw2JLWnXYiCNJHqACvA752vd",
+  "application_name" : "85928fe5-309b-4f9a-a4d5-8513965b63a8",
+  "scope" : "",
+  "expires_in" : "3599",
+  "refresh_count" : "0",
+  "status" : "approved"
+}
+
+15:35:16.484 [print] Response:  {
+  "refresh_token_expires_in": "0",
+  "api_product_list": "[ Pensiones_Tramites_QA, Grupo_Empleados_QA]",
+  "api_product_list_json": [
+    " Pensiones_Tramites_QA",
+    "Grupo_Empleados_QA"
+  ],
+  "organization_name": "profuturo",
+  "developer.email": "jose.luis.rojas.perez@everis.com",
+  "token_type": "BearerToken",
+  "issued_at": "1611783316355",
+  "nombre": "",
+  "client_id": "21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO",
+  "access_token": "0Kpytw2JLWnXYiCNJHqACvA752vd",
+  "application_name": "85928fe5-309b-4f9a-a4d5-8513965b63a8",
+  "scope": "",
+  "expires_in": "3599",
+  "refresh_count": "0",
+  "status": "approved"
+}
+
+15:35:16.495 [print] Token:  0Kpytw2JLWnXYiCNJHqACvA752vd
+15:35:16.496 << lock released, cached callSingle: classpath:pensionatapigee/pensionatGetTokenApigee.feature
+15:35:16.688 karate.env system property was:  
+ust.jks: 2
+15:27:32.623 key store key count for server_private.jks: 2
+15:27:32.777 key store key count for server-trust.jks: 2
+15:27:32.860 key store key count for server_private.jks: 2

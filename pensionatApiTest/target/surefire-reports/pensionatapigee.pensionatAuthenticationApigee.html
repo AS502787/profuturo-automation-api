@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>pensionatapigee.pensionatAuthenticationApigee</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2020-10-23 03:23:39 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:8]">[1:8] Validar el acceso en la aplicaci&oacute;n por medio del API sea correcta. </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">pensionatapigee/pensionatAuthenticationApigee.feature</span><span class="feature-description">MVP_API_Acceso, pantalla de autenticaci&oacute;n</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:8]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:8]</span><span class="scenario-name">Validar el acceso en la aplicaci&oacute;n por medio del API sea correcta. </span>
+</div>
+<div class="scenario-time passed">ms: 2322</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:8]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* def tokenFeature = call read('pensionatGetTokenApigee.feature')</div>
+</div>
+<div class="time-cell passed">1425</div>
+</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="1.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">pensionatapigee/pensionatGetTokenApigee.feature</div>
+</div>
+<div class="time-cell passed">1407</div>
+</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def requestToken =</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="2">{
+	'client_id' : '21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO',
+	'client_secret' : 'g4QQkgiNr1xcqao1',
+	'grant_type' : 'client_credentials'
+}
+15:23:37.493 karate.env system property was:</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="3">
+<div class="step-ref bg-step">3</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given url 'https://api.qa.profuturo.mx/oauth2/token'</div>
+</div>
+<div class="time-cell passed">7</div>
+</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="4">
+<div class="step-ref bg-step">4</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And header Content-Type = 'application/x-www-form-urlencoded'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="5">
+<div class="step-ref bg-step">5</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And form fields requestToken</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="6">
+<div class="step-ref bg-step">6</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">1382</div>
+</div>
+<div class="preformatted" data-parent="6">15:23:38.349 request:
+1 &gt; POST https://api.qa.profuturo.mx/oauth2/token
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 103
+1 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 &gt; Host: api.qa.profuturo.mx
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+client_id=21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO&amp;client_secret=g4QQkgiNr1xcqao1&amp;grant_type=client_credentials
+
+15:23:38.957 response time in milliseconds: 606.79
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 623
+1 &lt; Content-Type: application/json
+1 &lt; Date: Fri, 23 Oct 2020 20:23:39 GMT
+{
+  "refresh_token_expires_in" : "0",
+  "api_product_list" : "[ Pensiones_Tramites_QA, Grupo_Empleados_QA]",
+  "api_product_list_json" : [ " Pensiones_Tramites_QA", "Grupo_Empleados_QA" ],
+  "organization_name" : "profuturo",
+  "developer.email" : "jose.luis.rojas.perez@everis.com",
+  "token_type" : "BearerToken",
+  "issued_at" : "1603484619816",
+  "nombre" : "",
+  "client_id" : "21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO",
+  "access_token" : "D9BnBhjVa9hV6i5YaZvxTFx4zGzW",
+  "application_name" : "85928fe5-309b-4f9a-a4d5-8513965b63a8",
+  "scope" : "",
+  "expires_in" : "3599",
+  "refresh_count" : "0",
+  "status" : "approved"
+}</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="7">
+<div class="step-ref bg-step">7</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="8">
+<div class="step-ref bg-step">8</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then print 'Response: ',response</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="8">15:23:38.961 [print] Response:  {
+  "refresh_token_expires_in": "0",
+  "api_product_list": "[ Pensiones_Tramites_QA, Grupo_Empleados_QA]",
+  "api_product_list_json": [
+    " Pensiones_Tramites_QA",
+    "Grupo_Empleados_QA"
+  ],
+  "organization_name": "profuturo",
+  "developer.email": "jose.luis.rojas.perez@everis.com",
+  "token_type": "BearerToken",
+  "issued_at": "1603484619816",
+  "nombre": "",
+  "client_id": "21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO",
+  "access_token": "D9BnBhjVa9hV6i5YaZvxTFx4zGzW",
+  "application_name": "85928fe5-309b-4f9a-a4d5-8513965b63a8",
+  "scope": "",
+  "expires_in": "3599",
+  "refresh_count": "0",
+  "status": "approved"
+}</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="9">
+<div class="step-ref bg-step">9</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def getToken = response.access_token</div>
+</div>
+<div class="time-cell passed">7</div>
+</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="10">
+<div class="step-ref bg-step">10</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then print 'Token: ',getToken</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="10">15:23:38.970 [print] Token:  D9BnBhjVa9hV6i5YaZvxTFx4zGzW</div>
+<div class="step-row" data-parent="[1:8]bg">
+<div class="step-container" id="11">
+<div class="step-ref bg-step">11</div>
+<div class="step-cell passed">* def token = tokenFeature.getToken</div>
+</div>
+<div class="time-cell passed">7</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">* def params = read('autenticacionUsuario.json')</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">Given url 'https://api.qa.profuturo.mx/1/empleados/autenticacionUsuario'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">And header Authorization = 'Bearer ' + token</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">And header Content-Type = 'application/json'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">And request params</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">875</div>
+</div>
+<div class="preformatted" data-parent="17">15:23:38.995 request:
+1 &gt; POST https://api.qa.profuturo.mx/1/empleados/autenticacionUsuario
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer D9BnBhjVa9hV6i5YaZvxTFx4zGzW
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 96
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: api.qa.profuturo.mx
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"rqt":{"aplicacion":"expedientePensiones","contrasena":"Profutur02019**","usuario":"MC501422"}}
+
+15:23:39.867 response time in milliseconds: 871.39
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json;charset=utf-8
+1 &lt; Date: Fri, 23 Oct 2020 20:23:40 GMT
+1 &lt; Server: Apache-Coyote/1.1
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Backside-Transport: OK OK
+1 &lt; X-Global-Transaction-ID: c388aa805f933bccbe20a00f
+{"confirmacion":true,"numeroEmpleado":"501422"}</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref passed">18</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-cell passed">And match response == {"confirmacion":true,"numeroEmpleado":"501422"}</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.test.java.pensionatapigee.pensionatBusquedaCtePolizaApigee2</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">0</div>
+            
+<div class="bg-danger" id="nav-fail">2</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2020-10-27 10:53:33 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item failed">
+<a href="#[1:7]">[1:7] Validar el acceso en la aplicaci&oacute;n por medio del API sea correcta. </a>
+</div>
+<div class="nav-item failed">
+<a href="#[2:19]">[2:19] Validar que la informaci&oacute;n que se regresa del API sea correcta respecto a la p&oacute;liza dada. </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/pensionatapigee/pensionatBusquedaCtePolizaApigee2.feature</span><span class="feature-description">B&uacute;squeda de cliente por p&oacute;liza</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:7]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">Validar el acceso en la aplicaci&oacute;n por medio del API sea correcta. </span>
+</div>
+<div class="scenario-time failed">ms: 1894</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:7]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:7]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* def getToken = call read('pensionatGetTokenApigee.feature')</div>
+</div>
+<div class="time-cell passed">1540</div>
+</div>
+<div class="step-row" data-parent="[1:7]bg">
+<div class="step-container" id="1.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">/eclipse-workspace/pensionatApiTest/src/test/java/pensionatapigee/pensionatGetTokenApigee.feature</div>
+</div>
+<div class="time-cell passed">1345</div>
+</div>
+<div class="step-row" data-parent="[1:7]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def requestToken =</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="2">{
+	'client_id' : '21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO',
+	'client_secret' : 'g4QQkgiNr1xcqao1',
+	'grant_type' : 'client_credentials'
+}
+22:53:31.250 karate.env system property was:</div>
+<div class="step-row" data-parent="[1:7]bg">
+<div class="step-container" id="3">
+<div class="step-ref bg-step">3</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given url 'https://api.qa.profuturo.mx/oauth2/token'</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row" data-parent="[1:7]bg">
+<div class="step-container" id="4">
+<div class="step-ref bg-step">4</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And header Content-Type = 'application/x-www-form-urlencoded'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row" data-parent="[1:7]bg">
+<div class="step-container" id="5">
+<div class="step-ref bg-step">5</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And form fields requestToken</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:7]bg">
+<div class="step-container" id="6">
+<div class="step-ref bg-step">6</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">1320</div>
+</div>
+<div class="preformatted" data-parent="6">22:53:32.170 request:
+1 &gt; POST https://api.qa.profuturo.mx/oauth2/token
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 103
+1 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 &gt; Host: api.qa.profuturo.mx
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+client_id=21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO&amp;client_secret=g4QQkgiNr1xcqao1&amp;grant_type=client_credentials
+
+22:53:32.829 response time in milliseconds: 657.46
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 623
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 28 Oct 2020 04:53:32 GMT
+{
+  "refresh_token_expires_in" : "0",
+  "api_product_list" : "[ Pensiones_Tramites_QA, Grupo_Empleados_QA]",
+  "api_product_list_json" : [ " Pensiones_Tramites_QA", "Grupo_Empleados_QA" ],
+  "organization_name" : "profuturo",
+  "developer.email" : "jose.luis.rojas.perez@everis.com",
+  "token_type" : "BearerToken",
+  "issued_at" : "1603860812287",
+  "nombre" : "",
+  "client_id" : "21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO",
+  "access_token" : "h47CL6biLAz96kY6U8Nk2PFel8eG",
+  "application_name" : "85928fe5-309b-4f9a-a4d5-8513965b63a8",
+  "scope" : "",
+  "expires_in" : "3599",
+  "refresh_count" : "0",
+  "status" : "approved"
+}</div>
+<div class="step-row" data-parent="[1:7]bg">
+<div class="step-container" id="7">
+<div class="step-ref bg-step">7</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1:7]bg">
+<div class="step-container" id="8">
+<div class="step-ref bg-step">8</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then print 'Response: ',response</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="8">22:53:32.833 [print] Response:  {
+  "refresh_token_expires_in": "0",
+  "api_product_list": "[ Pensiones_Tramites_QA, Grupo_Empleados_QA]",
+  "api_product_list_json": [
+    " Pensiones_Tramites_QA",
+    "Grupo_Empleados_QA"
+  ],
+  "organization_name": "profuturo",
+  "developer.email": "jose.luis.rojas.perez@everis.com",
+  "token_type": "BearerToken",
+  "issued_at": "1603860812287",
+  "nombre": "",
+  "client_id": "21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO",
+  "access_token": "h47CL6biLAz96kY6U8Nk2PFel8eG",
+  "application_name": "85928fe5-309b-4f9a-a4d5-8513965b63a8",
+  "scope": "",
+  "expires_in": "3599",
+  "refresh_count": "0",
+  "status": "approved"
+}</div>
+<div class="step-row" data-parent="[1:7]bg">
+<div class="step-container" id="9">
+<div class="step-ref bg-step">9</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def getToken = response.access_token</div>
+</div>
+<div class="time-cell passed">9</div>
+</div>
+<div class="step-row" data-parent="[1:7]bg">
+<div class="step-container" id="10">
+<div class="step-ref bg-step">10</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then print 'Token: ',getToken</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="10">22:53:32.845 [print] Token:  h47CL6biLAz96kY6U8Nk2PFel8eG</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">* def requestAutenticacion = read('autenticacionUsuario.json')</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">Given url 'https://api.qa.profuturo.mx/1/empleados/autenticacionUsuario'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">And header Authorization = 'Bearer ' + getToken</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">And header Content-Type = 'application/json'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">And request requestAutenticacion</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">341</div>
+</div>
+<div class="preformatted" data-parent="16">22:53:32.862 request:
+1 &gt; POST https://api.qa.profuturo.mx/1/empleados/autenticacionUsuario
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer com.intuit.karate.ScriptObjectMap@588f03f8
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 96
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: api.qa.profuturo.mx
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"rqt":{"aplicacion":"expedientePensiones","contrasena":"Profutur02019**","usuario":"MC501422"}}
+
+22:53:33.199 response time in milliseconds: 335.82
+1 &lt; 401
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 309
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 28 Oct 2020 04:53:32 GMT
+1 &lt; WWW-Authenticate: Bearer realm="null",error="invalid_token",error_description="keymanagement.service.invalid_access_token: Invalid Access Token"
+{
+    "error": {
+        "codigo": "401",
+        "descripcion": "Los permisos para consumir la api no son v&aacute;lidos",
+        "detalle": "Los permisos para consumir la api no son v&aacute;lidos, revisar autorizai&oacute;n, credenciales, vigencia, etc. ",
+        "info": "http://dev-profuturo.devportal.apigee.io"
+    }
+}</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref failed">17</div>
+<div class="step-cell failed">Then status 200</div>
+</div>
+<div class="time-cell failed">1</div>
+</div>
+<div class="preformatted" data-parent="17">22:53:33.201 status code was: 401, expected: 200, response time: 336, url: https://api.qa.profuturo.mx/1/empleados/autenticacionUsuario, response: {"error":{"descripcion":"Los permisos para consumir la api no son v&aacute;lidos","codigo":"401","detalle":"Los permisos para consumir la api no son v&aacute;lidos, revisar autorizai&oacute;n, credenciales, vigencia, etc. ","info":"http://dev-profuturo.devportal.apigee.io"}}
+pensionatBusquedaCtePolizaApigee2.feature:16 - status code was: 401, expected: 200, response time: 336, url: https://api.qa.profuturo.mx/1/empleados/autenticacionUsuario, response: {"error":{"descripcion":"Los permisos para consumir la api no son v&aacute;lidos","codigo":"401","detalle":"Los permisos para consumir la api no son v&aacute;lidos, revisar autorizai&oacute;n, credenciales, vigencia, etc. ","info":"http://dev-profuturo.devportal.apigee.io"}}</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref skipped">18</div>
+<div class="step-cell skipped">And match response == {"confirmacion":true,"numeroEmpleado":"501422"}</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2:19]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [2:19]</span><span class="scenario-name">Validar que la informaci&oacute;n que se regresa del API sea correcta respecto a la p&oacute;liza dada. </span>
+</div>
+<div class="scenario-time failed">ms: 690</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2:19]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2:19]bg">
+<div class="step-container" id="19">
+<div class="step-ref bg-step">19</div>
+<div class="step-cell passed">* def getToken = call read('pensionatGetTokenApigee.feature')</div>
+</div>
+<div class="time-cell passed">347</div>
+</div>
+<div class="step-row" data-parent="[2:19]bg">
+<div class="step-container" id="19.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">/eclipse-workspace/pensionatApiTest/src/test/java/pensionatapigee/pensionatGetTokenApigee.feature</div>
+</div>
+<div class="time-cell passed">335</div>
+</div>
+<div class="step-row" data-parent="[2:19]bg">
+<div class="step-container" id="20">
+<div class="step-ref bg-step">20</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def requestToken =</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="20">{
+	'client_id' : '21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO',
+	'client_secret' : 'g4QQkgiNr1xcqao1',
+	'grant_type' : 'client_credentials'
+}
+22:53:33.213 karate.env system property was:</div>
+<div class="step-row" data-parent="[2:19]bg">
+<div class="step-container" id="21">
+<div class="step-ref bg-step">21</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given url 'https://api.qa.profuturo.mx/oauth2/token'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row" data-parent="[2:19]bg">
+<div class="step-container" id="22">
+<div class="step-ref bg-step">22</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And header Content-Type = 'application/x-www-form-urlencoded'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[2:19]bg">
+<div class="step-container" id="23">
+<div class="step-ref bg-step">23</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And form fields requestToken</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[2:19]bg">
+<div class="step-container" id="24">
+<div class="step-ref bg-step">24</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">329</div>
+</div>
+<div class="preformatted" data-parent="24">22:53:33.229 request:
+1 &gt; POST https://api.qa.profuturo.mx/oauth2/token
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 103
+1 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 &gt; Host: api.qa.profuturo.mx
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+client_id=21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO&amp;client_secret=g4QQkgiNr1xcqao1&amp;grant_type=client_credentials
+
+22:53:33.557 response time in milliseconds: 326.65
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 623
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 28 Oct 2020 04:53:32 GMT
+{
+  "refresh_token_expires_in" : "0",
+  "api_product_list" : "[ Pensiones_Tramites_QA, Grupo_Empleados_QA]",
+  "api_product_list_json" : [ " Pensiones_Tramites_QA", "Grupo_Empleados_QA" ],
+  "organization_name" : "profuturo",
+  "developer.email" : "jose.luis.rojas.perez@everis.com",
+  "token_type" : "BearerToken",
+  "issued_at" : "1603860813020",
+  "nombre" : "",
+  "client_id" : "21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO",
+  "access_token" : "T6X7wqer6xlDefiVcY9OMKT69rnG",
+  "application_name" : "85928fe5-309b-4f9a-a4d5-8513965b63a8",
+  "scope" : "",
+  "expires_in" : "3599",
+  "refresh_count" : "0",
+  "status" : "approved"
+}</div>
+<div class="step-row" data-parent="[2:19]bg">
+<div class="step-container" id="25">
+<div class="step-ref bg-step">25</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[2:19]bg">
+<div class="step-container" id="26">
+<div class="step-ref bg-step">26</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then print 'Response: ',response</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="26">22:53:33.558 [print] Response:  {
+  "refresh_token_expires_in": "0",
+  "api_product_list": "[ Pensiones_Tramites_QA, Grupo_Empleados_QA]",
+  "api_product_list_json": [
+    " Pensiones_Tramites_QA",
+    "Grupo_Empleados_QA"
+  ],
+  "organization_name": "profuturo",
+  "developer.email": "jose.luis.rojas.perez@everis.com",
+  "token_type": "BearerToken",
+  "issued_at": "1603860813020",
+  "nombre": "",
+  "client_id": "21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO",
+  "access_token": "T6X7wqer6xlDefiVcY9OMKT69rnG",
+  "application_name": "85928fe5-309b-4f9a-a4d5-8513965b63a8",
+  "scope": "",
+  "expires_in": "3599",
+  "refresh_count": "0",
+  "status": "approved"
+}</div>
+<div class="step-row" data-parent="[2:19]bg">
+<div class="step-container" id="27">
+<div class="step-ref bg-step">27</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def getToken = response.access_token</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[2:19]bg">
+<div class="step-container" id="28">
+<div class="step-ref bg-step">28</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then print 'Token: ',getToken</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="28">22:53:33.560 [print] Token:  T6X7wqer6xlDefiVcY9OMKT69rnG</div>
+<div class="step-row">
+<div class="step-container" id="29">
+<div class="step-ref passed">29</div>
+<div class="step-cell passed">* def requestPoliza = read('busquedaCtePoliza.json')</div>
+</div>
+<div class="time-cell passed">7</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="30">
+<div class="step-ref passed">30</div>
+<div class="step-cell passed">Given url 'https://api.qa.profuturo.mx/pensiones/2/pensionado/grupoFamiliar'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="31">
+<div class="step-ref passed">31</div>
+<div class="step-cell passed">And header Authorization = 'Bearer ' + getToken</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="32">
+<div class="step-ref passed">32</div>
+<div class="step-cell passed">And header Content-Type = 'application/json'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="33">
+<div class="step-ref passed">33</div>
+<div class="step-cell passed">And request requestPoliza</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="34">
+<div class="step-ref passed">34</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">332</div>
+</div>
+<div class="preformatted" data-parent="34">22:53:33.572 request:
+1 &gt; POST https://api.qa.profuturo.mx/pensiones/2/pensionado/grupoFamiliar
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer com.intuit.karate.ScriptObjectMap@7812b906
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 24
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: api.qa.profuturo.mx
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"poliza":"20180023887"}
+
+22:53:33.903 response time in milliseconds: 329.22
+1 &lt; 401
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 309
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 28 Oct 2020 04:53:33 GMT
+1 &lt; WWW-Authenticate: Bearer realm="null",error="invalid_token",error_description="keymanagement.service.invalid_access_token: Invalid Access Token"
+{
+    "error": {
+        "codigo": "401",
+        "descripcion": "Los permisos para consumir la api no son v&aacute;lidos",
+        "detalle": "Los permisos para consumir la api no son v&aacute;lidos, revisar autorizai&oacute;n, credenciales, vigencia, etc. ",
+        "info": "http://dev-profuturo.devportal.apigee.io"
+    }
+}</div>
+<div class="step-row">
+<div class="step-container" id="35">
+<div class="step-ref failed">35</div>
+<div class="step-cell failed">Then status 200</div>
+</div>
+<div class="time-cell failed">1</div>
+</div>
+<div class="preformatted" data-parent="35">22:53:33.904 status code was: 401, expected: 200, response time: 329, url: https://api.qa.profuturo.mx/pensiones/2/pensionado/grupoFamiliar, response: {"error":{"descripcion":"Los permisos para consumir la api no son v&aacute;lidos","codigo":"401","detalle":"Los permisos para consumir la api no son v&aacute;lidos, revisar autorizai&oacute;n, credenciales, vigencia, etc. ","info":"http://dev-profuturo.devportal.apigee.io"}}
+pensionatBusquedaCtePolizaApigee2.feature:28 - status code was: 401, expected: 200, response time: 329, url: https://api.qa.profuturo.mx/pensiones/2/pensionado/grupoFamiliar, response: {"error":{"descripcion":"Los permisos para consumir la api no son v&aacute;lidos","codigo":"401","detalle":"Los permisos para consumir la api no son v&aacute;lidos, revisar autorizai&oacute;n, credenciales, vigencia, etc. ","info":"http://dev-profuturo.devportal.apigee.io"}}</div>
+<div class="step-row">
+<div class="step-container" id="36">
+<div class="step-ref skipped">36</div>
+<div class="step-cell skipped">Then print 'Response: ',response</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="37">
+<div class="step-ref skipped">37</div>
+<div class="step-cell skipped">And match response == {"poliza":"20180023887"}</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

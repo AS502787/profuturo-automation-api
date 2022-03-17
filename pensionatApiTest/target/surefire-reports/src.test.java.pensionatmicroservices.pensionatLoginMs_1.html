@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.test.java.pensionatmicroservices.pensionatLoginMs_1</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">0</div>
+            
+<div class="bg-danger" id="nav-fail">1</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2021-01-27 03:27:33 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item failed">
+<a href="#[1.1:6]">[1.1:6] Validar que la informaci&oacute;n que se regresa del API sea correcta respecto a la p&oacute;liza dada &amp; que el grupo familiar corresponda a la informaci&oacute;n del cliente una vez ingresado su p&oacute;liza.</a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/pensionatmicroservices/pensionatLoginMs_1.feature</span><span class="feature-description">MVP_API_Tr&aacute;mite servicio a pensionados alta y o cambio de forma de pago</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.1:6]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [1.1:6]</span><span class="scenario-name">Validar que la informaci&oacute;n que se regresa del API sea correcta respecto a la p&oacute;liza dada &amp; que el grupo familiar corresponda a la informaci&oacute;n del cliente una vez ingresado su p&oacute;liza.</span>
+</div>
+<div class="scenario-time failed">ms: 387</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.1:6]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.1:6]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* configure ssl = { keyStore: 'server_private.jks', keyStorePassword: 'changeit', keyStoreType: 'jks', trustStore: 'server-trust.jks', trustStorePassword: 'changeit', trustStoreType: 'jks' }</div>
+</div>
+<div class="time-cell passed">374</div>
+</div>
+<div class="preformatted" data-parent="1">15:27:32.305 &lt;&lt; lock released, cached callSingle: classpath:pensionatapigee/pensionatGetTokenApigee.feature
+15:27:32.541 key store key count for server-trust.jks: 2
+15:27:32.623 key store key count for server_private.jks: 2</div>
+<div class="step-row" data-parent="[1.1:6]bg">
+<div class="step-container" id="1.1">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">pensionatapigee/pensionatGetTokenApigee.feature</div>
+</div>
+<div class="time-cell passed">2839</div>
+</div>
+<div class="callarg-container" data-parent="1.1">
+<div class="step-ref"> 
+</div>
+<div class="preformatted">{
+  "env": "dev",
+  "myVarName": "someValue",
+  "authInfo": {
+    "authToken": "TiuD3QK49gNUlzHzELJvS3CdOfcB"
+  }
+}
+</div>
+</div>
+<div class="step-row" data-parent="[1.1:6]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def requestToken =</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="2">{
+	'client_id' : '21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO',
+	'client_secret' : 'g4QQkgiNr1xcqao1',
+	'grant_type' : 'client_credentials'
+}
+15:27:29.373 karate.env system property was:  
+15:27:29.375 &gt;&gt; lock acquired, begin callSingle: classpath:pensionatapigee/pensionatGetTokenApigee.feature</div>
+<div class="step-row" data-parent="[1.1:6]bg">
+<div class="step-container" id="3">
+<div class="step-ref bg-step">3</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Given url 'https://api.qa.profuturo.mx/oauth2/token'</div>
+</div>
+<div class="time-cell passed">7</div>
+</div>
+<div class="step-row" data-parent="[1.1:6]bg">
+<div class="step-container" id="4">
+<div class="step-ref bg-step">4</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And header Content-Type = 'application/x-www-form-urlencoded'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row" data-parent="[1.1:6]bg">
+<div class="step-container" id="5">
+<div class="step-ref bg-step">5</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And form fields requestToken</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.1:6]bg">
+<div class="step-container" id="6">
+<div class="step-ref bg-step">6</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">2807</div>
+</div>
+<div class="preformatted" data-parent="6">15:27:30.302 request:
+1 &gt; POST https://api.qa.profuturo.mx/oauth2/token
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 103
+1 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 &gt; Host: api.qa.profuturo.mx
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+client_id=21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO&amp;client_secret=g4QQkgiNr1xcqao1&amp;grant_type=client_credentials
+
+15:27:32.282 response time in milliseconds: 1978.02
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 623
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 27 Jan 2021 21:27:32 GMT
+{
+  "refresh_token_expires_in" : "0",
+  "api_product_list" : "[ Pensiones_Tramites_QA, Grupo_Empleados_QA]",
+  "api_product_list_json" : [ " Pensiones_Tramites_QA", "Grupo_Empleados_QA" ],
+  "organization_name" : "profuturo",
+  "developer.email" : "jose.luis.rojas.perez@everis.com",
+  "token_type" : "BearerToken",
+  "issued_at" : "1611782852176",
+  "nombre" : "",
+  "client_id" : "21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO",
+  "access_token" : "TiuD3QK49gNUlzHzELJvS3CdOfcB",
+  "application_name" : "85928fe5-309b-4f9a-a4d5-8513965b63a8",
+  "scope" : "",
+  "expires_in" : "3599",
+  "refresh_count" : "0",
+  "status" : "approved"
+}</div>
+<div class="step-row" data-parent="[1.1:6]bg">
+<div class="step-container" id="7">
+<div class="step-ref bg-step">7</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[1.1:6]bg">
+<div class="step-container" id="8">
+<div class="step-ref bg-step">8</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">And if (responseStatus != 200) karate.fail('Error al obtener status 200')</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row" data-parent="[1.1:6]bg">
+<div class="step-container" id="9">
+<div class="step-ref bg-step">9</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then print 'Response: ', response</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="9">15:27:32.293 [print] Response:  {
+  "refresh_token_expires_in": "0",
+  "api_product_list": "[ Pensiones_Tramites_QA, Grupo_Empleados_QA]",
+  "api_product_list_json": [
+    " Pensiones_Tramites_QA",
+    "Grupo_Empleados_QA"
+  ],
+  "organization_name": "profuturo",
+  "developer.email": "jose.luis.rojas.perez@everis.com",
+  "token_type": "BearerToken",
+  "issued_at": "1611782852176",
+  "nombre": "",
+  "client_id": "21gYjSJ7jie6GUCTGpQXYyTN1DUCkQBO",
+  "access_token": "TiuD3QK49gNUlzHzELJvS3CdOfcB",
+  "application_name": "85928fe5-309b-4f9a-a4d5-8513965b63a8",
+  "scope": "",
+  "expires_in": "3599",
+  "refresh_count": "0",
+  "status": "approved"
+}</div>
+<div class="step-row" data-parent="[1.1:6]bg">
+<div class="step-container" id="10">
+<div class="step-ref bg-step">10</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">* def access_token = response.access_token</div>
+</div>
+<div class="time-cell passed">8</div>
+</div>
+<div class="step-row" data-parent="[1.1:6]bg">
+<div class="step-container" id="11">
+<div class="step-ref bg-step">11</div>
+<div class="step-indent"> 
+</div>
+<div class="step-cell passed">Then print 'Token: ', access_token</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="11">15:27:32.304 [print] Token:  TiuD3QK49gNUlzHzELJvS3CdOfcB</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">Given url 'https://clientes-api-service-tsf-profuturo3-qa.apps.paasprofuturo-d.r6b1.p1.openshiftapps.com/'</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">And header Content-Type = 'application/json'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">And request {"consecutivo_beneficiario":0,"id_beneficiario_poliza":'#(id_beneficiario_poliza)',"id_grupo_pago":'#(id_grupo_pago)',"id_oferta":0,"id_poliza":'#(id_poliza)'}</div>
+</div>
+<div class="time-cell passed">15</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref failed">15</div>
+<div class="step-cell failed">When method POST</div>
+</div>
+<div class="time-cell failed">364</div>
+</div>
+<div class="preformatted" data-parent="15">15:27:32.951 request:
+1 &gt; POST https://clientes-api-service-tsf-profuturo3-qa.apps.paasprofuturo-d.r6b1.p1.openshiftapps.com/
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 159
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: clientes-api-service-tsf-profuturo3-qa.apps.paasprofuturo-d.r6b1.p1.openshiftapps.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"consecutivo_beneficiario":0,"id_beneficiario_poliza":"#(id_beneficiario_poliza)","id_grupo_pago":"#(id_grupo_pago)","id_oferta":0,"id_poliza":"#(id_poliza)"}
+
+15:27:33.311 javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 360 milliseconds for URL: https://clientes-api-service-tsf-profuturo3-qa.apps.paasprofuturo-d.r6b1.p1.openshiftapps.com/
+15:27:33.311 http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+pensionatLoginMs_1.feature:13 - 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref skipped">16</div>
+<div class="step-cell skipped">Then status 200</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref skipped">17</div>
+<div class="step-cell skipped">And if (responseStatus != 200) karate.fail('Error al obtener status 200')</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref skipped">18</div>
+<div class="step-cell skipped">And print 'Response: ',response</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref skipped">19</div>
+<div class="step-cell skipped">And match response == {"code":200,"message":"Consulta exitosa","response":{"solicitante":{"id_oferta":1024683,"id_poliza":'#(id_poliza)',"id_grupo_pago":'#(id_grupo_pago)',"fecha_nacimiento":"","curp":"NAEM791207MTSCLR02","rfc":"NAEM791207","e_firma":"","apellido_paterno":"NACIANCENO","apellido_materno":"ELIAS","nombre":"MARCELA GUADALUPE","id_titular_cobro":228930,"ocupacion":"","correo":"","gpo_pago":1,"folio_oferta":"31805020893","domicilio":{"calle":"TAMAULIPAS","id_pais":141,"pais_descripcion":"MEXICO","asentamiento":"UNIDAD NACIONAL","ciudad":"CIUDAD MADERO","estado":"TAMAULIPAS","municipio":"CIUDAD MADERO","num_ext":"111","codigo_postal":"89410"},"telefonos":[{"id_telefono":15917551,"consecutivo_referencia":"","clave_nacional":"833","clave_internacional":"","indicador_preferente":0,"indicador_sms":0,"numero":"4534761","tipo_telefono":"MOVIL","extension":"","horario_de":"","horario_hasta":""}],"referencias":[{"id_parentesco":"591","desc_parentesco":"OTRO","id_referencia_personal":47010,"consecutivo_referencia":"","apellido_materno":"SMITH","apellido_paterno":"LUGO","consecutivo_grupo_pago":1,"nombre":"ALEJANDRA","telefonos":[]}],"datos_bancarios":{"descripcion":"BBVA BANCOMER","tipo_cuenta":"DEPOSITO EN CUENTA BANCARIA","clabe":"012813004634489676","id_banco":50}}}}</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

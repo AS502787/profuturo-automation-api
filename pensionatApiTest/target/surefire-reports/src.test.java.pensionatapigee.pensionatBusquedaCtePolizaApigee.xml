@@ -1,0 +1,24 @@
+<testsuite failures="1" name="src/test/java/pensionatapigee/pensionatBusquedaCtePolizaApigee.feature" skipped="0" tests="1" time="30.303113">
+  <testcase classname="src.test.java.pensionatapigee.pensionatBusquedaCtePolizaApigee" name="Validar que la información que se regresa del API sea correcta respecto a la póliza dada." time="30.303113">
+    <failure message="pensionatBusquedaCtePolizaApigee.feature:17 - &#10;java.net.SocketTimeoutException: Read timed out">* def requestPoliza = read('file:resources/requestJson/busquedaCtePoliza.json') . passed
+* def time = authInfo.authTime ............................................ passed
+* def token = authInfo.authToken .......................................... passed
+* print token ............................................................. passed
+* print time .............................................................. passed
+Given url 'https://api.qa.profuturo.mx/pensiones/2/pensionado/grupoFamiliar' . passed
+And header Authorization = 'Bearer ' + token .............................. passed
+And header Content-Type = 'application/json' .............................. passed
+And request requestPoliza ................................................. passed
+When method POST .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: pensionatBusquedaCtePolizaApigee.feature:17 - 
+java.net.SocketTimeoutException: Read timed out&#13;
+	at ✽.When method POST (pensionatBusquedaCtePolizaApigee.feature:17)&#13;
+
+Then status 200 ........................................................... skipped
+* if (responseStatus != 200) karate.fail('Error al obtener status 200') ... skipped
+Then print 'Response: ',response .......................................... skipped
+And match $.poliza[0].grupoPago[0].numero_renta_vitalicia == "20180023887" . skipped</failure>
+  </testcase>
+</testsuite>

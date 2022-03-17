@@ -1,0 +1,49 @@
+<testsuite failures="2" name="src/test/java/pensionatapigee/pensionatBusquedaCtePolizaApigee2.feature" skipped="0" tests="2" time="2.583784">
+  <testcase classname="src.test.java.pensionatapigee.pensionatBusquedaCtePolizaApigee2" name="Validar el acceso en la aplicación por medio del API sea correcta." time="1.89393">
+    <failure message="pensionatBusquedaCtePolizaApigee2.feature:16 - status code was: 401, expected: 200, response time: 336, url: https://api.qa.profuturo.mx/1/empleados/autenticacionUsuario, response: {&quot;error&quot;:{&quot;descripcion&quot;:&quot;Los permisos para consumir la api no son válidos&quot;,&quot;codigo&quot;:&quot;401&quot;,&quot;detalle&quot;:&quot;Los permisos para consumir la api no son válidos, revisar autorizaión, credenciales, vigencia, etc. &quot;,&quot;info&quot;:&quot;http://dev-profuturo.devportal.apigee.io&quot;}}">* def getToken = call read('pensionatGetTokenApigee.feature') ............. passed
+* def requestAutenticacion = read('autenticacionUsuario.json') ............ passed
+Given url 'https://api.qa.profuturo.mx/1/empleados/autenticacionUsuario' .. passed
+And header Authorization = 'Bearer ' + getToken ........................... passed
+And header Content-Type = 'application/json' .............................. passed
+And request requestAutenticacion .......................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: pensionatBusquedaCtePolizaApigee2.feature:16 - status code was: 401, expected: 200, response time: 336, url: https://api.qa.profuturo.mx/1/empleados/autenticacionUsuario, response: {"error":{"descripcion":"Los permisos para consumir la api no son válidos","codigo":"401","detalle":"Los permisos para consumir la api no son válidos, revisar autorizaión, credenciales, vigencia, etc. ","info":"http://dev-profuturo.devportal.apigee.io"}}&#13;
+	at ✽.Then status 200 (pensionatBusquedaCtePolizaApigee2.feature:16)&#13;
+
+And match response == {"confirmacion":true,"numeroEmpleado":"501422"} ..... skipped</failure>
+  </testcase>
+  <testcase classname="src.test.java.pensionatapigee.pensionatBusquedaCtePolizaApigee2" name="Validar que la información que se regresa del API sea correcta respecto a la póliza dada." time="0.689854">
+    <failure message="pensionatBusquedaCtePolizaApigee2.feature:28 - status code was: 401, expected: 200, response time: 329, url: https://api.qa.profuturo.mx/pensiones/2/pensionado/grupoFamiliar, response: {&quot;error&quot;:{&quot;descripcion&quot;:&quot;Los permisos para consumir la api no son válidos&quot;,&quot;codigo&quot;:&quot;401&quot;,&quot;detalle&quot;:&quot;Los permisos para consumir la api no son válidos, revisar autorizaión, credenciales, vigencia, etc. &quot;,&quot;info&quot;:&quot;http://dev-profuturo.devportal.apigee.io&quot;}}">* def getToken = call read('pensionatGetTokenApigee.feature') ............. passed
+* def requestAutenticacion = read('autenticacionUsuario.json') ............ passed
+Given url 'https://api.qa.profuturo.mx/1/empleados/autenticacionUsuario' .. passed
+And header Authorization = 'Bearer ' + getToken ........................... passed
+And header Content-Type = 'application/json' .............................. passed
+And request requestAutenticacion .......................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: pensionatBusquedaCtePolizaApigee2.feature:16 - status code was: 401, expected: 200, response time: 336, url: https://api.qa.profuturo.mx/1/empleados/autenticacionUsuario, response: {"error":{"descripcion":"Los permisos para consumir la api no son válidos","codigo":"401","detalle":"Los permisos para consumir la api no son válidos, revisar autorizaión, credenciales, vigencia, etc. ","info":"http://dev-profuturo.devportal.apigee.io"}}&#13;
+	at ✽.Then status 200 (pensionatBusquedaCtePolizaApigee2.feature:16)&#13;
+
+And match response == {"confirmacion":true,"numeroEmpleado":"501422"} ..... skipped
+* def getToken = call read('pensionatGetTokenApigee.feature') ............. passed
+* def requestPoliza = read('busquedaCtePoliza.json') ...................... passed
+Given url 'https://api.qa.profuturo.mx/pensiones/2/pensionado/grupoFamiliar' . passed
+And header Authorization = 'Bearer ' + getToken ........................... passed
+And header Content-Type = 'application/json' .............................. passed
+And request requestPoliza ................................................. passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: pensionatBusquedaCtePolizaApigee2.feature:28 - status code was: 401, expected: 200, response time: 329, url: https://api.qa.profuturo.mx/pensiones/2/pensionado/grupoFamiliar, response: {"error":{"descripcion":"Los permisos para consumir la api no son válidos","codigo":"401","detalle":"Los permisos para consumir la api no son válidos, revisar autorizaión, credenciales, vigencia, etc. ","info":"http://dev-profuturo.devportal.apigee.io"}}&#13;
+	at ✽.Then status 200 (pensionatBusquedaCtePolizaApigee2.feature:28)&#13;
+
+Then print 'Response: ',response .......................................... skipped
+And match response == {"poliza":"20180023887"} ............................ skipped</failure>
+  </testcase>
+</testsuite>

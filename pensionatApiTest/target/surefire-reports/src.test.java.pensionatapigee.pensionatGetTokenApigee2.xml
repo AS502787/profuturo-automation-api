@@ -1,0 +1,6 @@
+<testsuite failures="0" name="src/test/java/pensionatapigee/pensionatGetTokenApigee2.feature" skipped="0" tests="1" time="0.010702">
+  <testcase classname="src.test.java.pensionatapigee.pensionatGetTokenApigee2" name="Validar que se genere el access token de manera exitosa." time="0.010702">
+    <system-out>* def responseJson = read('file:resources/requestJson/detalleCliente.json') . passed
+* set json ................................................................ passed</system-out>
+  </testcase>
+</testsuite>

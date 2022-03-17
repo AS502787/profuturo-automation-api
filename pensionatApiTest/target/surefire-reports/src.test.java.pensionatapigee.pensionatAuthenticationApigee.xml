@@ -1,0 +1,18 @@
+<testsuite failures="0" name="src/test/java/pensionatapigee/pensionatAuthenticationApigee.feature" skipped="0" tests="1" time="0.792678">
+  <testcase classname="src.test.java.pensionatapigee.pensionatAuthenticationApigee" name="Validar el acceso en la aplicación por medio del API sea correcta." time="0.792678">
+    <system-out>* def requestAutenticacion = read('file:resources/requestJson/autenticacionUsuario.json') . passed
+* def time = authInfo.authTime ............................................ passed
+* def token = authInfo.authToken .......................................... passed
+* print token ............................................................. passed
+* print time .............................................................. passed
+Given url 'https://api.qa.profuturo.mx/1/empleados/autenticacionUsuario' .. passed
+And header Authorization = 'Bearer ' + token .............................. passed
+And header Content-Type = 'application/json' .............................. passed
+And request requestAutenticacion .......................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+* if (responseStatus != 200) karate.fail('Error al obtener status 200') ... passed
+Then print 'Response: ', response ......................................... passed
+And match response == {"confirmacion":true,"numeroEmpleado":"501422"} ..... passed</system-out>
+  </testcase>
+</testsuite>

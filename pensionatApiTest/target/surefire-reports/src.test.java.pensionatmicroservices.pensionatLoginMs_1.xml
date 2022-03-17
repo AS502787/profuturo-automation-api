@@ -1,0 +1,19 @@
+<testsuite failures="1" name="src/test/java/pensionatmicroservices/pensionatLoginMs_1.feature" skipped="0" tests="1" time="0.386725">
+  <testcase classname="src.test.java.pensionatmicroservices.pensionatLoginMs_1" name="Validar que la información que se regresa del API sea correcta respecto a la póliza dada" time="0.386725">
+    <failure message="pensionatLoginMs_1.feature:13 - &#10;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target">* configure ssl = { keyStore: 'server_private.jks', keyStorePassword: 'changeit', keyStoreType: 'jks', trustStore: 'server-trust.jks', trustStorePassword: 'changeit', trustStoreType: 'jks' } . passed
+Given url 'https://clientes-api-service-tsf-profuturo3-qa.apps.paasprofuturo-d.r6b1.p1.openshiftapps.com/' . passed
+And header Content-Type = 'application/json' .............................. passed
+And request {"consecutivo_beneficiario":0,"id_beneficiario_poliza":'#(id_beneficiario_poliza)',"id_grupo_pago":'#(id_grupo_pago)',"id_oferta":0,"id_poliza":'#(id_poliza)'} . passed
+When method POST .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: pensionatLoginMs_1.feature:13 - 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target&#13;
+	at ✽.When method POST (pensionatLoginMs_1.feature:13)&#13;
+
+Then status 200 ........................................................... skipped
+And if (responseStatus != 200) karate.fail('Error al obtener status 200') . skipped
+And print 'Response: ',response ........................................... skipped
+And match response == {"code":200,"message":"Consulta exitosa","response":{"solicitante":{"id_oferta":1024683,"id_poliza":'#(id_poliza)',"id_grupo_pago":'#(id_grupo_pago)',"fecha_nacimiento":"","curp":"NAEM791207MTSCLR02","rfc":"NAEM791207","e_firma":"","apellido_paterno":"NACIANCENO","apellido_materno":"ELIAS","nombre":"MARCELA GUADALUPE","id_titular_cobro":228930,"ocupacion":"","correo":"","gpo_pago":1,"folio_oferta":"31805020893","domicilio":{"calle":"TAMAULIPAS","id_pais":141,"pais_descripcion":"MEXICO","asentamiento":"UNIDAD NACIONAL","ciudad":"CIUDAD MADERO","estado":"TAMAULIPAS","municipio":"CIUDAD MADERO","num_ext":"111","codigo_postal":"89410"},"telefonos":[{"id_telefono":15917551,"consecutivo_referencia":"","clave_nacional":"833","clave_internacional":"","indicador_preferente":0,"indicador_sms":0,"numero":"4534761","tipo_telefono":"MOVIL","extension":"","horario_de":"","horario_hasta":""}],"referencias":[{"id_parentesco":"591","desc_parentesco":"OTRO","id_referencia_personal":47010,"consecutivo_referencia":"","apellido_materno":"SMITH","apellido_paterno":"LUGO","consecutivo_grupo_pago":1,"nombre":"ALEJANDRA","telefonos":[]}],"datos_bancarios":{"descripcion":"BBVA BANCOMER","tipo_cuenta":"DEPOSITO EN CUENTA BANCARIA","clabe":"012813004634489676","id_banco":50}}}} . skipped</failure>
+  </testcase>
+</testsuite>
